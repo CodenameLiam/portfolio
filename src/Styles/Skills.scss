@@ -1,0 +1,64 @@
+.skills {
+	background: rgba(15, 16, 20, 1);
+
+	.skills-overview {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: 1rem;
+		row-gap: 1rem;
+		margin-bottom: 6rem;
+
+		.overview-title {
+			margin-bottom: 1rem;
+			font-weight: 500;
+		}
+
+		@media screen and (max-width: 1200px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (max-width: 720px) {
+			display: block;
+
+			.overview-content {
+				margin-bottom: 2rem;
+			}
+		}
+
+		.skill-icon {
+			width: 10rem;
+		}
+	}
+
+	.icon-group-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 3rem;
+		margin-bottom: 6rem;
+
+		.icon-group {
+			display: grid;
+			column-gap: 2rem;
+			row-gap: 2rem;
+
+			.language-icon {
+				width: 6rem;
+				margin: auto;
+			}
+		}
+
+		.language-group {
+			grid-template-columns: repeat(9, 6rem);
+			@media screen and (max-width: 1200px) {
+				grid-template-columns: repeat(3, 6rem);
+			}
+		}
+
+		.tool-group {
+			grid-template-columns: repeat(6, 6rem);
+			@media screen and (max-width: 1200px) {
+				grid-template-columns: repeat(3, 6rem);
+			}
+		}
+	}
+}

@@ -19,6 +19,7 @@
 		"react-scripts": "3.4.3",
 		"react-string-replace": "^0.4.4",
 		"react-transition-group": "^4.4.1",
+		"reactjs-popup": "^2.0.4",
 		"sass": "^1.26.11",
 		"typescript": "~3.7.2"
 	},
