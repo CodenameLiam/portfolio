@@ -1,0 +1,36 @@
+.sparkle-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.sparkle-wrapper {
+	position: absolute;
+	animation: star-animation-size 1s ease-in-out forwards;
+}
+
+.sparkle {
+	width: 100%;
+	animation: star-animation-rotation 1s linear forwards;
+}
+
+@keyframes star-animation-size {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes star-animation-rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}

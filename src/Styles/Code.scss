@@ -1,0 +1,60 @@
+.code {
+	display: grid;
+	grid-template-columns: 0.5rem auto;
+
+	border-radius: 0.5rem;
+	color: #bbbbbb;
+	background-color: #1c1e26;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	.border {
+		display: grid;
+		grid-template-rows: 25% 25% 25% 25%;
+		.purple {
+			background-color: #b877db;
+			border-radius: 0.5rem 0 0 0;
+		}
+
+		.red {
+			background-color: #e95678;
+		}
+
+		.orange {
+			background-color: #fab795;
+		}
+
+		.blue {
+			background-color: #25b0bc;
+			border-radius: 0 0 0 0.5rem;
+		}
+	}
+
+	.block {
+		padding: 1rem;
+		code {
+			white-space: break-spaces;
+			// display: block;
+		}
+
+		.purple {
+			color: #b877db;
+		}
+
+		.red {
+			color: #e95678;
+		}
+
+		.orange {
+			color: #fab795;
+		}
+
+		.blue {
+			color: #25b0bc;
+		}
+	}
+}
+
+// background-color: #1c1e26;

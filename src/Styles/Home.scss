@@ -1,0 +1,48 @@
+.section-container {
+	text-align: center;
+	margin: auto;
+
+	padding: 2rem;
+	max-width: 60rem;
+	color: $theme-light;
+
+	.section-title {
+		margin-top: 4rem;
+		font-size: 4rem;
+		margin-bottom: 2rem;
+		@media screen and (max-width: 800px) {
+			font-size: 2rem;
+		}
+	}
+
+	.section-text {
+		margin-bottom: 4rem;
+	}
+
+	.life-links {
+		display: flex;
+		justify-content: center;
+
+		.life-link {
+			margin: 0rem 2rem;
+			width: 100%;
+			max-width: 5rem;
+
+			@media screen and (max-width: 800px) {
+				margin: 0rem 1.5rem;
+			}
+		}
+	}
+}
+
+.about-break {
+	// margin-top: 6rem;
+	// width: 100%;
+	fill: #ffffff;
+	fill: rgba(15, 16, 20, 1);
+}
+
+.skills {
+	background: #ffffff;
+	background: rgba(15, 16, 20, 1);
+}

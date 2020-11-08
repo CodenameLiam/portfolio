@@ -1,0 +1,20 @@
+.header{
+    background: $theme-dark;
+    height: 20rem;
+    position: relative;
+
+    .name{
+        color: #ffffff;
+        font-size: 2rem;
+    }
+    
+
+
+    .test{
+        height: 100rem;
+        width: 100rem;
+        border-radius: 100rem;
+        background: red;
+        position: absolute;
+    }
+}

@@ -1,0 +1,162 @@
+.landing {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	background: rgba(15, 16, 20, 1);
+	background: linear-gradient(180deg, rgba(28, 30, 38, 1) 0%, rgba(15, 16, 20, 1) 100%);
+
+	.name-container {
+		position: relative;
+		display: flex;
+		z-index: 15;
+
+		width: 100%;
+		height: 100%;
+		max-width: 60rem;
+		margin: auto;
+	}
+	.name {
+		margin: auto;
+		color: $theme-light;
+		font-size: 7rem;
+
+		.name-light {
+			margin-right: 1rem;
+			font-weight: 500;
+			z-index: 15;
+		}
+
+		.name-bold {
+			font-weight: 700;
+			z-index: 10;
+		}
+
+		.name-description {
+			display: flex;
+			justify-content: center;
+
+			.mail-icon {
+				fill: $theme-light;
+				margin: auto 0rem;
+				margin-left: 0.5rem;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			font-size: 14vw;
+		}
+	}
+
+	.solar,
+	.cloud-1-1,
+	.cloud-1-2,
+	.cloud-2-1,
+	.cloud-2-2 {
+		z-index: 10;
+		position: absolute;
+		width: 40%;
+	}
+
+	.cloud-1-1 {
+		right: 0rem;
+		bottom: 30%;
+
+		max-width: 15rem;
+		animation: 25s cloud-1-1-animation ease-in-out infinite;
+	}
+
+	.cloud-1-2 {
+		left: -6rem;
+		bottom: 36%;
+
+		max-width: 14rem;
+		animation: 25s cloud-1-2-animation ease-in-out infinite;
+	}
+
+	.cloud-2-1 {
+		right: -2rem;
+		bottom: 26%;
+
+		max-width: 15rem;
+		animation: 25s cloud-2-1-animation ease-in-out infinite;
+	}
+
+	.cloud-2-2 {
+		left: -12rem;
+		bottom: 32%;
+
+		max-width: 14rem;
+		animation: 25s cloud-2-2-animation ease-in-out infinite;
+	}
+
+	@keyframes cloud-1-1-animation {
+		50% {
+			transform: translate(10rem);
+		}
+		100% {
+			transform: translate(0rem);
+		}
+	}
+
+	@keyframes cloud-1-2-animation {
+		60% {
+			transform: translate(3rem);
+		}
+		100% {
+			transform: translate(0rem);
+		}
+	}
+
+	@keyframes cloud-2-1-animation {
+		30% {
+			transform: translate(6rem);
+		}
+		70% {
+			transform: translate(-2rem);
+		}
+		100% {
+			transform: translate(0rem);
+		}
+	}
+
+	@keyframes cloud-2-2-animation {
+		40% {
+			transform: translate(6rem);
+		}
+		100% {
+			transform: translate(0rem);
+		}
+	}
+
+	.solar {
+		transform: rotate(25deg);
+		top: -15rem;
+		left: -15rem;
+		max-width: 50rem;
+		min-width: 15rem;
+		width: 100%;
+		transition: all 5s;
+		@media screen and (max-width: 1000px) {
+			left: -25%;
+		}
+		@media screen and (max-width: 800px) {
+			top: -10%;
+		}
+		animation: solar-animation 60s linear infinite;
+	}
+
+	@keyframes solar-animation {
+		100% {
+			transform: rotate(385deg);
+		}
+	}
+
+	.landing-border {
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		fill: $theme-dark;
+	}
+}
