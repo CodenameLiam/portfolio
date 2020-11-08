@@ -1,7 +1,6 @@
 import React from "react";
 import CodeBlock from "./Components/CodeBlock";
 import { Home } from "./Pages/Home";
-import "animate.css/animate.min.css";
 
 const App = () => {
 	return (
