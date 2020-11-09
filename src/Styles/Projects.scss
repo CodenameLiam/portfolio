@@ -8,6 +8,15 @@
 		row-gap: 1rem;
 		margin-bottom: 6rem;
 
+		.overview-content {
+			transition: all 0.3s;
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				transform: scale(1.02);
+			}
+		}
+
 		.overview-title {
 			margin-bottom: 1rem;
 			font-weight: 500;
@@ -30,61 +39,65 @@
 				max-height: 12rem;
 				height: 50%;
 			}
-
-			// @media screen and (max-width: 1200px) {
-			// 	max-width: 15rem;
-			// }
 		}
 
 		@media screen and (max-width: 1200px) {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
+}
 
-	.project-sub-title-left {
-		text-align: left;
+.project-sub-title-left {
+	text-align: left;
+}
+
+.project-sub-title-right {
+	text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+	.project-sub-title-left,
+	.project-sub-title-right {
+		text-align: center;
+	}
+}
+
+.project-container {
+	display: grid;
+
+	column-gap: 2rem;
+	// display: flex;
+	.project-image-container {
+		max-width: 30rem;
+		// width: 50%;
+		background: #ffffff;
+		border-radius: 1rem;
+		padding: 1rem;
+		// box-shadow: inset 0px 0px 20px grey;
+
+		.project-image {
+			width: 100%;
+		}
 	}
 
-	.project-sub-title-right {
-		text-align: right;
+	.project-text-container {
+		// width: 50%;
 	}
 
 	@media screen and (max-width: 1200px) {
-		.project-sub-title-left,
-		.project-sub-title-right {
-			text-align: center;
-		}
-	}
+		display: block;
 
-	.project-container {
-		display: grid;
-		grid-template-columns: 40% 1fr;
-		column-gap: 2rem;
-		// display: flex;
 		.project-image-container {
 			max-width: 30rem;
-			// width: 50%;
-			background: #ffffff;
-			border-radius: 1rem;
-			padding: 1rem;
-			// box-shadow: inset 0px 0px 20px grey;
-
-			.project-image {
-				width: 100%;
-			}
-		}
-
-		.project-text-container {
-			// width: 50%;
-		}
-
-		@media screen and (max-width: 1200px) {
-			display: block;
-
-			.project-image-container {
-				max-width: 30rem;
-				margin: 2rem auto;
-			}
+			margin: 2rem auto;
 		}
 	}
+}
+
+.project-container-left {
+	grid-template-columns: 40% 1fr;
+}
+
+.project-container-right {
+	grid-template-columns: 1fr 40%;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ReactComponent as Code } from "./../Media/Skills/Code.svg";
 import { ReactComponent as Design } from "./../Media/Skills/Design.svg";
@@ -18,55 +18,7 @@ export const Skills = () => {
 					<div className="section-sub-title">Overview</div>
 				</ScrollAnimation>
 
-				<div className="skills-overview">
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={100}>
-						<div className="overview-content">
-							<Code className="skill-icon" />
-							<div className="overview-title">Development</div>
-							<div className="overview-text">
-								Development is my craft. I love that it allows me to be creative,
-								solve complex problems, and ultimately build something great. I
-								always strive to develop clean, clear, performant, responsive and
-								high quality code.
-							</div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={200}>
-						<div className="overview-content">
-							<Design className="skill-icon" />
-							<div className="overview-title">Design</div>
-							<div className="overview-text">
-								Creation is core to the human experience, and I am incredibly
-								passionate about producing work that incites that special feeling
-								deep within others, and hopefully inspires them in their own
-								creative endeavours.
-							</div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={300}>
-						<div className="overview-content">
-							<Ops className="skill-icon" />
-							<div className="overview-title">Operations</div>
-							<div className="overview-text">
-								There is no point making a product if no one can see how awesome it
-								is! I love architecting scalable, highly performant and fault
-								tolerant solutions, or developing tooling to assist with the
-								deployment process.
-							</div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={400}>
-						<div className="overview-content">
-							<Coms className="skill-icon" />
-							<div className="overview-title">Communication</div>
-							<div className="overview-text">
-								Team work makes the dream work. I am super passionate about sharing
-								knowledge, collaborating, learning from or mentoring others and
-								ultimately just working together as a team towards a common goal.
-							</div>
-						</div>
-					</ScrollAnimation>
-				</div>
+				<div className="skills-overview">{renderSkillsOverview()}</div>
 
 				<ScrollAnimation animateIn="fadeIn" animateOnce>
 					<div className="section-sub-title">
@@ -84,8 +36,7 @@ export const Skills = () => {
 							on={["hover", "focus"]}
 							trigger={<Info className="tooltip-button" />}>
 							<span className="tooltip">
-								I have worked with these languages extensively throughout my career
-								in production, at univeristy and on personal projects
+								I have worked with these languages extensively
 							</span>
 						</Popup>
 					</div>
@@ -122,9 +73,8 @@ export const Skills = () => {
 							on={["hover", "focus"]}
 							trigger={<Info className="tooltip-button" />}>
 							<span className="tooltip">
-								I use most these tools on a daily basis, and have significant
-								experience with all of them in production, university and on
-								personal projects
+								I use most these tools on a daily basis, and have solid working
+								experience with all of them
 							</span>
 						</Popup>
 					</div>
@@ -180,4 +130,71 @@ const LanguageIcon = (props: ILanguageIconProps) => {
 			<span className="tooltip">{props.tooptip}</span>
 		</Popup>
 	);
+};
+
+interface ISkillOverviewProps {
+	icon: ReactElement;
+	title: string;
+	text: string;
+	delay: number;
+}
+
+const SkillOverview = (props: ISkillOverviewProps) => {
+	return (
+		<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={props.delay}>
+			<div className="overview-content">
+				{props.icon}
+				<div className="overview-title">{props.title}</div>
+				<div className="overview-text">{props.text}</div>
+			</div>
+		</ScrollAnimation>
+	);
+};
+
+const SkillsOverviewContent: ISkillOverviewProps[] = [
+	{
+		icon: <Code className="skill-icon" />,
+		title: "Development",
+		text: `Development is my craft. I love that it allows me to be creative,
+	solve complex problems, and ultimately build something great. I
+	always strive to develop clean, clear, performant, responsive and
+	high quality code.`,
+		delay: 100,
+	},
+	{
+		icon: <Design className="skill-icon" />,
+		title: "Design",
+		text: `Creation is core to the human experience, and I am incredibly
+		passionate about producing work that hits the aesthetic sweet spot, 
+		and hopefully inspires others in their own creative endeavours.`,
+		delay: 200,
+	},
+	{
+		icon: <Ops className="skill-icon" />,
+		title: "Operations",
+		text: `There is no point making a product if no one can see how awesome it
+		is! I love architecting scalable, highly performant and fault
+		tolerant solutions, or developing tooling to assist with the
+		deployment process.`,
+		delay: 300,
+	},
+	{
+		icon: <Coms className="skill-icon" />,
+		title: "Teamwork",
+		text: `Team work makes the dream work! I am super passionate about sharing
+		knowledge, collaborating, learning from or mentoring others and
+		ultimately just working together as a team to make great things.`,
+		delay: 400,
+	},
+];
+
+const renderSkillsOverview = () => {
+	return SkillsOverviewContent.map((skill: ISkillOverviewProps) => (
+		<SkillOverview
+			title={skill.title}
+			text={skill.text}
+			icon={skill.icon}
+			delay={skill.delay}
+		/>
+	));
 };

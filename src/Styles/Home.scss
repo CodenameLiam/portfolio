@@ -55,6 +55,9 @@
 
 .popup-content {
 	animation: fadeIn 0.5s forwards;
+	@media screen and (max-width: 800px) {
+		max-width: 150px;
+	}
 }
 
 .tooltip-button {

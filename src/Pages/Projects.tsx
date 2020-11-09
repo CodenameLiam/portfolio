@@ -1,24 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import Popup from "reactjs-popup";
+import { ReactComponent as Info } from "./../Media/Icons/Info.svg";
+import { ScrollContext } from "./Home";
 
-interface IProjectProps {
-	delay: number;
-	title: string;
-	image: string;
+interface IProjectsRefs {
+	// studySavRef: ()=>void;
 }
 
-const Project = (props: IProjectProps) => {
-	return (
-		<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={props.delay}>
-			<div className="overview-content">
-				<img className="overview-image" src={props.image} />
-				<div className="overview-title">{props.title}</div>
-			</div>
-		</ScrollAnimation>
-	);
-};
-
-export const Projects = () => {
+export const Projects = (props: IProjectsRefs) => {
 	return (
 		<div className="projects">
 			<div className="section-container">
@@ -27,119 +17,118 @@ export const Projects = () => {
 				</ScrollAnimation>
 
 				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-sub-title">Overview</div>
-				</ScrollAnimation>
-
-				<div className="projects-overview">
-					<Project
-						delay={100}
-						title="Study Saviour"
-						image="https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png"
-					/>
-					<Project
-						delay={200}
-						title="YourHealth+"
-						image="https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png"
-					/>
-
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={300}>
-						<div className="overview-content">
-							<img
-								className="overview-image"
-								src="https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png"
-							/>
-							<div className="overview-title">News Reader</div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={100}>
-						<div className="overview-content">
-							<img
-								className="overview-image"
-								src="https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png"
-							/>
-							<div className="overview-title">Gene Sequencing</div>
-						</div>
-					</ScrollAnimation>
-
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={200}>
-						<div className="overview-content">
-							<img
-								className="overview-image"
-								src="https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png"
-							/>
-							<div className="overview-title">Machine Learning Medical Diagnosis</div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={300}>
-						<div className="overview-content">
-							<div className="overview-title">Machine Learning Puzzle Solver</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={100}>
-						<div className="overview-content">
-							<div className="overview-title">Vector Graphics Design Tool</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={200}>
-						<div className="overview-content">
-							<div className="overview-title">Multi-Threaded Disbuted System</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={300}>
-						<div className="overview-content">
-							<div className="overview-title">Paramlet Australia</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={100}>
-						<div className="overview-content">
-							<div className="overview-title">Vector Graphics Design Tool</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={200}>
-						<div className="overview-content">
-							<div className="overview-title">Multi-Threaded Disbuted System</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-					<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={300}>
-						<div className="overview-content">
-							<div className="overview-title">Paramlet Australia</div>
-							<div className="overview-text"></div>
-						</div>
-					</ScrollAnimation>
-				</div>
-
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-sub-title project-sub-title-left">
-						Consensus Promotor Predictor
+					<div className="section-sub-title">
+						Overview
+						<Popup
+							contentStyle={{
+								padding: "1rem",
+								background: "#1c1e26",
+								color: "#ffffff",
+								border: "none",
+								textAlign: "center",
+							}}
+							arrow={false}
+							position="bottom center"
+							on={["hover", "focus"]}
+							trigger={<Info className="tooltip-button" />}>
+							<span className="tooltip">Click on a project to see more info!</span>
+						</Popup>
 					</div>
 				</ScrollAnimation>
 
-				<div className="project-container">
-					<ScrollAnimation
-						animateIn="fadeInLeft"
-						animateOnce
-						className="project-image-container">
-						<img
-							className="project-image"
-							src={process.env.PUBLIC_URL + "/Media/CAB320/DecisionTreeGraph.png"}
-						/>
-					</ScrollAnimation>
-					<ScrollAnimation
-						animateIn="fadeInRight"
-						animateOnce
-						className="project-text-container">
-						<div className="project-text"></div>
-					</ScrollAnimation>
-				</div>
+				<div className="projects-overview">{renderProjectContent()}</div>
 			</div>
 		</div>
 	);
+};
+
+interface IProjectProps {
+	delay: number;
+	title: string;
+	image: string;
+	scrollRef: string;
+}
+
+const Project = (props: IProjectProps) => {
+	const scrollRefs = useContext(ScrollContext);
+
+	return (
+		<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={props.delay}>
+			<div className="overview-content" onClick={scrollRefs[props.scrollRef]}>
+				<img
+					className="overview-image"
+					src={process.env.PUBLIC_URL + "/Projects/" + props.image}
+				/>
+				<div className="overview-title">{props.title}</div>
+			</div>
+		</ScrollAnimation>
+	);
+};
+
+const ProjectContent: IProjectProps[] = [
+	{
+		delay: 100,
+		title: "Study Saviour",
+		image: "StudySaviour.png",
+		scrollRef: "studyScrollRef",
+	},
+	{
+		delay: 200,
+		title: "YourHealth+",
+		image: "YHP.png",
+		scrollRef: "YHPScrollRef",
+	},
+	{
+		delay: 300,
+		title: "Parmalat Australia",
+		image: "Parm.png",
+		scrollRef: "parmScrollRef",
+	},
+	{
+		delay: 100,
+		title: "News Reader",
+		image: "News.png",
+		scrollRef: "scrollRefFunc",
+	},
+	{
+		delay: 200,
+		title: "Gene Sequencer",
+		image: "Gene.png",
+		scrollRef: "scrollRefFunc",
+	},
+	{
+		delay: 300,
+		title: "Vector Graphics Design Tool",
+		image: "VDT.png",
+		scrollRef: "scrollRefFunc",
+	},
+	{
+		delay: 100,
+		title: "Machine Learning Medical Diagnosis",
+		image: "https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png",
+		scrollRef: "scrollRefFunc",
+	},
+	{
+		delay: 200,
+		title: "Machine Learning Puzzle Solver",
+		image: "https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png",
+		scrollRef: "scrollRefFunc",
+	},
+	{
+		delay: 300,
+		title: "Multi-Threaded Distributed System",
+		image: "https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png",
+		scrollRef: "scrollRefFunc",
+	},
+];
+
+const renderProjectContent = () => {
+	return ProjectContent.map((project: IProjectProps) => (
+		<Project
+			delay={project.delay}
+			title={project.title}
+			image={project.image}
+			scrollRef={project.scrollRef}
+		/>
+	));
 };
