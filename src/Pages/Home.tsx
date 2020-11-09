@@ -14,6 +14,7 @@ export const Home = () => {
 	return (
 		<React.Fragment>
 			{/* <div ref={myRef}>I wanna be seen</div> */}
+			{/* Random test for git credentials */}
 			<Landing />
 
 			<div className="content">
