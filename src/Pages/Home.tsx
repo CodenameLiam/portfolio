@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { SectionBreak } from "../Components/SectionBreak";
+import { NewsReader } from "../Projects/NewsReader";
 import { Parmalat } from "../Projects/Parmalat";
 import { StudySaviour } from "../Projects/StudySaviour";
 import { YHP } from "../Projects/YHP";
@@ -18,6 +19,7 @@ export const Home = () => {
 	const studyScrollRef = useRef<any>(null);
 	const YHPScrollRef = useRef<any>(null);
 	const parmScrollRef = useRef<any>(null);
+	const newsScrollRef = useRef<any>(null);
 
 	return (
 		<ScrollContext.Provider
@@ -25,6 +27,7 @@ export const Home = () => {
 				studyScrollRef: () => scrollToRef(studyScrollRef),
 				YHPScrollRef: () => scrollToRef(YHPScrollRef),
 				parmScrollRef: () => scrollToRef(parmScrollRef),
+				newsScrollRef: () => scrollToRef(newsScrollRef),
 			}}>
 			<Landing />
 
@@ -40,7 +43,9 @@ export const Home = () => {
 				<YHP />
 				<SectionBreak className="parmalat-break" scrollRef={parmScrollRef} />
 				<Parmalat />
-				<SectionBreak className="news-break" scrollRef={parmScrollRef} />
+				<SectionBreak className="news-break" scrollRef={newsScrollRef} />
+				<NewsReader />
+				<SectionBreak className="gene-break" scrollRef={newsScrollRef} />
 			</div>
 
 			{/* <button ref={bottomScrollRef} onClick={() => scrollToRef(studyScrollRef)}>

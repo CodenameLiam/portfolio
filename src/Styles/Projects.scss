@@ -55,49 +55,121 @@
 	text-align: right;
 }
 
-@media screen and (max-width: 1200px) {
-	.project-sub-title-left,
-	.project-sub-title-right {
+.project-sub-title-right,
+.project-sub-title-left {
+	margin: 0rem !important;
+
+	@media screen and (max-width: 1200px) {
+		margin-bottom: 1rem !important;
 		text-align: center;
 	}
 }
 
 .project-container {
 	display: grid;
-
+	margin-top: 4rem;
 	column-gap: 2rem;
-	// display: flex;
-	.project-image-container {
-		max-width: 30rem;
-		// width: 50%;
-		background: #ffffff;
-		border-radius: 1rem;
-		padding: 1rem;
-		// box-shadow: inset 0px 0px 20px grey;
 
-		.project-image {
-			width: 100%;
+	.project-link-icon {
+		height: 1.5rem;
+		margin-left: 1rem;
+
+		&:hover {
+			cursor: pointer;
 		}
 	}
 
+	.project-image {
+		width: 100%;
+		border-radius: 1rem;
+	}
+
 	.project-text-container {
-		// width: 50%;
+		display: grid;
+		grid-template-rows: 4rem 2rem 1fr 6rem;
+
+		@media screen and (max-width: 1200px) {
+			display: block;
+		}
+	}
+
+	.project-link-container {
+		display: flex;
+		margin-top: 1.25rem;
+
+		.project-stack {
+			display: flex;
+			flex-direction: row;
+			text-align: center;
+			color: #ffffff;
+
+			@media screen and (max-width: 1200px) {
+				margin: auto;
+			}
+
+			.stack-title {
+				margin-bottom: 0.25rem;
+				margin: auto;
+				margin-right: 1rem;
+				margin-left: 0rem;
+			}
+
+			.stack-images {
+				height: 2rem;
+				padding: 0.25rem;
+				border-radius: 1rem;
+				background: #ffffff;
+			}
+			.language-icon {
+				height: 100%;
+				margin-right: 0.5rem;
+			}
+		}
+	}
+
+	.project-link-container-right {
+		justify-content: flex-end;
 	}
 
 	@media screen and (max-width: 1200px) {
-		display: block;
+		flex-direction: column;
+		display: flex;
 
 		.project-image-container {
 			max-width: 30rem;
 			margin: 2rem auto;
+			margin-bottom: 4rem;
 		}
 	}
 }
 
 .project-container-left {
-	grid-template-columns: 40% 1fr;
+	grid-template-columns: 1fr 1fr;
+
+	.project-text-left {
+		text-align: left;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.project-text-left {
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 .project-container-right {
-	grid-template-columns: 1fr 40%;
+	grid-template-columns: 1fr 1fr;
+	.project-text-right {
+		text-align: right;
+	}
+
+	@media screen and (max-width: 1200px) {
+		flex-direction: column-reverse;
+		display: flex;
+		.project-text-right {
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+	}
 }

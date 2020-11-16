@@ -88,7 +88,7 @@ const ProjectContent: IProjectProps[] = [
 		delay: 100,
 		title: "News Reader",
 		image: "News.png",
-		scrollRef: "scrollRefFunc",
+		scrollRef: "newsScrollRef",
 	},
 	{
 		delay: 200,

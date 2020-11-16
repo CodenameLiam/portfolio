@@ -85,10 +85,11 @@ export const Skills = () => {
 						<div className="icon-group tool-group">
 							<LanguageIcon url="React.svg" tooptip="React JS / React Native" />
 							<LanguageIcon url="GraphQL.svg" tooptip="GraphQL" />
-							<LanguageIcon url="Storybook.png" tooptip="Storybook JS" />
+							{/* <LanguageIcon url="Storybook.png" tooptip="Storybook JS" /> */}
 							<LanguageIcon url="Docker.png" tooptip="Docker" />
 							<LanguageIcon url="Postgres.png" tooptip="PostgreSQL" />
 							<LanguageIcon url="Git.png" tooptip="Git" />
+							<LanguageIcon url="Redis.png" tooptip="Redis" />
 							<LanguageIcon url="NET.svg" tooptip="ASP.NET" />
 							<LanguageIcon url="AWS.svg" tooptip="Amazon Web Services" />
 							<LanguageIcon url="Node.png" tooptip="Node JS / Express" />
@@ -108,7 +109,7 @@ interface ILanguageIconProps {
 	tooptip: string;
 }
 
-const LanguageIcon = (props: ILanguageIconProps) => {
+export const LanguageIcon = (props: ILanguageIconProps) => {
 	return (
 		<Popup
 			contentStyle={{

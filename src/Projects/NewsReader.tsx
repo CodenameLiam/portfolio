@@ -5,9 +5,9 @@ import Popup from "reactjs-popup";
 import { LanguageIcon } from "../Pages/Skills";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
 
-export const YHP = () => {
+export const NewsReader = () => {
 	return (
-		<div className="yhp">
+		<div className="news-reader">
 			<div className="section-container">
 				<div className="project-container project-container-right">
 					<ScrollAnimation
@@ -15,7 +15,7 @@ export const YHP = () => {
 						animateOnce
 						className="project-text-container">
 						<div className="section-sub-title project-sub-title-right">
-							YourHealth+
+							News Reader
 							<Popup
 								contentStyle={{
 									background: "#1c1e26",
@@ -31,15 +31,15 @@ export const YHP = () => {
 							</Popup>
 						</div>
 						<div className="project-text-right">
-							<i>Health monitoring and wellness tool</i>
+							<i>News Article Speech Synthesizer</i>
 						</div>
 						<div className="project-text-right">
-							YourHealth+ supports and improves wellbeing, so that users can be
-							successful in achieving their goals. It allows users to measure, monitor
-							and improve their wellbeing through a combination of articles, tools and
-							activities, and provides support workers / psychiatrists mechanisms to
-							help identify areas of improvement or concern so they can deploy
-							appropriate resources to these users
+							Study Saviour provides students with a platform to share notes with each
+							other. This allows students to better understand a particular topic that
+							they may have missed in class, share knowledge in order to gain unique
+							insights into a subject, and cover more material by collaborating with
+							different members on the platform. The project was scalled elastically
+							using an AWS Application Load Balancer
 						</div>
 						<div className="project-link-container project-link-container-right">
 							<div className="project-stack">
@@ -48,9 +48,11 @@ export const YHP = () => {
 										url="React.svg"
 										tooptip="React JS / React Native"
 									/>
-									<LanguageIcon url="GraphQL.svg" tooptip="GraphQL" />
-									<LanguageIcon url="NET.svg" tooptip="ASP.NET" />
-									<LanguageIcon url="Postgres.png" tooptip="PostgreSQL" />
+									<LanguageIcon url="Node.png" tooptip="Node JS / Express" />
+									<LanguageIcon
+										url="GCP.svg"
+										tooptip="Google Cloud Text-To-Speech"
+									/>
 									<LanguageIcon url="Docker.png" tooptip="Docker" />
 									<LanguageIcon url="AWS.svg" tooptip="Amazon Web Services EC2" />
 								</div>

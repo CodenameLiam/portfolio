@@ -11,7 +11,7 @@ export const Landing = () => {
 	return (
 		<section className="landing">
 			<Circle className="solar" id="solar" />
-			{/* <Sparkles /> */}
+			<Sparkles />
 			<div className="name-container">
 				<div className="name">
 					<span className="name-light">Liam</span>
