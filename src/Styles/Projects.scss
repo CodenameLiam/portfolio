@@ -77,6 +77,10 @@
 		&:hover {
 			cursor: pointer;
 		}
+
+		@media screen and (max-width: 800px) {
+			height: 1rem;
+		}
 	}
 
 	.project-image {
@@ -115,14 +119,14 @@
 			}
 
 			.stack-images {
-				height: 2rem;
-				padding: 0.25rem;
+				height: 1.5rem;
+				padding: 0.5rem;
 				border-radius: 1rem;
 				background: #ffffff;
 			}
 			.language-icon {
 				height: 100%;
-				margin-right: 0.5rem;
+				margin: 0rem 0.25rem;
 			}
 		}
 	}

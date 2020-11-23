@@ -1,13 +1,13 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Carousel } from "react-responsive-carousel";
 import Popup from "reactjs-popup";
 import { LanguageIcon } from "../Pages/Skills";
-import { Carousel } from "react-responsive-carousel";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
 
-export const Parmalat = () => {
+export const PathFinder = () => {
 	return (
-		<div className="parmalat">
+		<div className="path-finder">
 			<div className="section-container">
 				<div className="project-container project-container-right">
 					<ScrollAnimation
@@ -15,7 +15,7 @@ export const Parmalat = () => {
 						animateOnce
 						className="project-text-container">
 						<div className="section-sub-title project-sub-title-right">
-							Parmalat Australia
+							Machine Learning Path Finder
 							<Popup
 								contentStyle={{
 									background: "#1c1e26",
@@ -31,35 +31,26 @@ export const Parmalat = () => {
 							</Popup>
 						</div>
 						<div className="project-text-right">
-							<i>Note sharing platform</i>
+							<i>News Article Speech Synthesizer</i>
 						</div>
 						<div className="project-text-right">
 							Study Saviour provides students with a platform to share notes with each
 							other. This allows students to better understand a particular topic that
 							they may have missed in class, share knowledge in order to gain unique
 							insights into a subject, and cover more material by collaborating with
-							different members on the platform. The project uses an AWS application
-							load balancer to scale elastically
+							different members on the platform. The project was scalled elastically
+							using an AWS Application Load Balancer
 						</div>
 						<div className="project-link-container project-link-container-right">
 							<div className="project-stack">
 								<div className="stack-images">
-									<LanguageIcon
-										url="React.svg"
-										tooptip="React JS / React Native"
-									/>
-									<LanguageIcon url="GraphQL.svg" tooptip="GraphQL" />
-									<LanguageIcon url="NET.svg" tooptip="ASP.NET" />
-									<LanguageIcon
-										url="IIS.png"
-										tooptip="Microsoft IIS / SQL Server"
-									/>
-									<LanguageIcon url="Docker.png" tooptip="Docker" />
+									<LanguageIcon url="Python.png" tooptip="Python" />
 								</div>
 								<div />
 							</div>
 						</div>
 					</ScrollAnimation>
+
 					<ScrollAnimation
 						animateIn="fadeInRight"
 						animateOnce

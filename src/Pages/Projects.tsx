@@ -74,16 +74,17 @@ const ProjectContent: IProjectProps[] = [
 	},
 	{
 		delay: 200,
-		title: "YourHealth+",
-		image: "YHP.png",
-		scrollRef: "YHPScrollRef",
-	},
-	{
-		delay: 300,
 		title: "Parmalat Australia",
 		image: "Parm.png",
 		scrollRef: "parmScrollRef",
 	},
+	{
+		delay: 300,
+		title: "YourHealth+",
+		image: "YHP.png",
+		scrollRef: "YHPScrollRef",
+	},
+
 	{
 		delay: 100,
 		title: "News Reader",
@@ -94,31 +95,31 @@ const ProjectContent: IProjectProps[] = [
 		delay: 200,
 		title: "Gene Sequencer",
 		image: "Gene.png",
-		scrollRef: "scrollRefFunc",
+		scrollRef: "geneScrollRef",
 	},
 	{
 		delay: 300,
 		title: "Vector Graphics Design Tool",
 		image: "VDT.png",
-		scrollRef: "scrollRefFunc",
+		scrollRef: "vectorScrollRef",
 	},
 	{
 		delay: 100,
 		title: "Machine Learning Medical Diagnosis",
-		image: "https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png",
-		scrollRef: "scrollRefFunc",
+		image: "MLMD.png",
+		scrollRef: "medScrollRef",
 	},
 	{
 		delay: 200,
-		title: "Machine Learning Puzzle Solver",
-		image: "https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png",
-		scrollRef: "scrollRefFunc",
+		title: "Machine Learning Path Finder",
+		image: "Path.png",
+		scrollRef: "pathScrollRef",
 	},
 	{
 		delay: 300,
 		title: "Multi-Threaded Distributed System",
-		image: "https://i.pinimg.com/originals/54/2c/7e/542c7e0c990d70f3e732b8a9cf64815f.png",
-		scrollRef: "scrollRefFunc",
+		image: "Dist.png",
+		scrollRef: "distScrollRef",
 	},
 ];
 
