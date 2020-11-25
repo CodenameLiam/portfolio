@@ -1,0 +1,50 @@
+.navigation {
+    position: fixed;
+    height: 55px;
+
+    width: 100%;
+    z-index: 100;
+    background: #313442;
+
+    transition: all 0.3s;
+
+    .navigation-item {
+        color: $theme-light;
+        padding: 1rem 2rem;
+        visibility: visible;
+        // @media screen and (max-width: 700px) {
+        //     visibility: hidden;
+        // }
+    }
+
+    .navigation-item-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-item-container-mobile {
+        display: block;
+
+        .navigation-item {
+            visibility: hidden;
+        }
+    }
+
+    .navigation-item-container-mobile-open {
+        .navigation-item {
+            visibility: visible;
+        }
+    }
+
+    .hamburger {
+        fill: $theme-light;
+        margin: auto 0rem;
+        visibility: hidden;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        @media screen and (max-width: 700px) {
+            visibility: visible;
+        }
+    }
+}
