@@ -68,7 +68,7 @@ export const Dist = () => {
 						<div className="project-link-container">
 							<div className="project-stack">
 								<div className="stack-images">
-									<LanguageIcon url="C.svg" tooptip="Python" />
+									<LanguageIcon url="C.svg" tooptip="C" />
 								</div>
 								<div />
 							</div>
