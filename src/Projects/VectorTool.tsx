@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Carousel } from "react-responsive-carousel";
 import Popup from "reactjs-popup";
+import { ProjectImage } from "../Components/ProjectImage";
 import { LanguageIcon } from "../Pages/Skills";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
 
 export const VectorTool = () => {
+	const [animateCarousel, setAnimateCarousel] = useState(false);
+
 	return (
-		<div className="vector-tool">
-			<div className="section-container">
-				<div className="project-container project-container-right">
+		<div className='vector-tool'>
+			<div className='section-container'>
+				<div className='project-container project-container-right'>
 					<ScrollAnimation
-						animateIn="fadeInLeft"
+						animateIn='fadeInLeft'
 						animateOnce
-						className="project-text-container">
-						<div className="section-sub-title project-sub-title-right">
-							Vector Tool
+						className='project-text-container'>
+						<div className='section-sub-title project-sub-title-right'>
+							Vector Graphics Tool
 							<Popup
 								contentStyle={{
 									background: "#1c1e26",
@@ -25,26 +28,26 @@ export const VectorTool = () => {
 									marginTop: "0.5rem",
 								}}
 								arrow={false}
-								position="bottom center"
-								trigger={<Link className="project-link-icon" />}>
+								position='bottom center'
+								trigger={<Link className='project-link-icon' />}>
 								<div>Test</div>
 							</Popup>
 						</div>
-						<div className="project-text-right">
-							<i>News Article Speech Synthesizer</i>
+						<div className='project-text-right'>
+							<i>Custom format vector design GUI</i>
 						</div>
-						<div className="project-text-right">
-							Study Saviour provides students with a platform to share notes with each
-							other. This allows students to better understand a particular topic that
-							they may have missed in class, share knowledge in order to gain unique
-							insights into a subject, and cover more material by collaborating with
-							different members on the platform. The project was scalled elastically
-							using an AWS Application Load Balancer
+						<div className='project-text-right'>
+							This tool was written using Java, and serves as a graphical user
+							interface for creating 2D vector graphics. There are a number of tools
+							available that provide the user with the ability to create vector based
+							images, including shapes, points, colour pickers ect. Once created these
+							images can be saved using a custom file format, and then shared with
+							others / re-opened to continue work.
 						</div>
-						<div className="project-link-container project-link-container-right">
-							<div className="project-stack">
-								<div className="stack-images">
-									<LanguageIcon url="Java.png" tooptip="Java" />
+						<div className='project-link-container project-link-container-right'>
+							<div className='project-stack'>
+								<div className='stack-images'>
+									<LanguageIcon url='Java.png' tooptip='Java' />
 								</div>
 								<div />
 							</div>
@@ -52,27 +55,23 @@ export const VectorTool = () => {
 					</ScrollAnimation>
 
 					<ScrollAnimation
-						animateIn="fadeInRight"
+						animateIn='fadeInRight'
 						animateOnce
-						className="project-image-container">
+						className='project-image-container'
+						afterAnimatedIn={() => setAnimateCarousel(true)}>
 						<Carousel
+							key={`vector${animateCarousel.toString()}`}
+							autoPlay={animateCarousel}
 							showThumbs={false}
-							autoPlay={true}
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<img
-								className="project-image"
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
+							<ProjectImage legend='Shape Tools' URL='Vector/Shapes.png' />
+							<ProjectImage
+								legend='Transparent Shapes'
+								URL='Vector/Transparent.png'
 							/>
-							<img
-								className="project-image"
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
+							<ProjectImage legend='Colour Picker' URL='Vector/Color.png' />
 						</Carousel>
 					</ScrollAnimation>
 				</div>

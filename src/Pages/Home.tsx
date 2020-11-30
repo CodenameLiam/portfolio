@@ -33,7 +33,13 @@ export const Home = () => {
 	}, []);
 
 	const onScroll = () => {
-		if (activeNavRef(projectScrollRef)) {
+		if (activeNavRef(contactScrollRef)) {
+			setActiveHeader("contact");
+		} else if (activeNavRef(culturalScrollRef)) {
+			setActiveHeader("cultural");
+		} else if (activeNavRef(awardsScrollRef)) {
+			setActiveHeader("awards");
+		} else if (activeNavRef(projectScrollRef)) {
 			setActiveHeader("projects");
 		} else if (activeNavRef(skillsScrollRef)) {
 			setActiveHeader("skills");

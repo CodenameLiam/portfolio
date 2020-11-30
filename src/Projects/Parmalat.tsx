@@ -4,6 +4,7 @@ import Popup from "reactjs-popup";
 import { LanguageIcon } from "../Pages/Skills";
 import { Carousel } from "react-responsive-carousel";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
+import { ProjectImage } from "../Components/ProjectImage";
 
 export const Parmalat = () => {
 	const [animateCarousel, setAnimateCarousel] = useState(false);
@@ -33,15 +34,15 @@ export const Parmalat = () => {
 							</Popup>
 						</div>
 						<div className='project-text-right'>
-							<i>Note sharing platform</i>
+							<i>Business data API / user portal / CMS</i>
 						</div>
 						<div className='project-text-right'>
-							Study Saviour provides students with a platform to share notes with each
-							other. This allows students to better understand a particular topic that
-							they may have missed in class, share knowledge in order to gain unique
-							insights into a subject, and cover more material by collaborating with
-							different members on the platform. The project uses an AWS application
-							load balancer to scale elastically
+							Developed an API using C# (ASP.NET, EF Core) to provide secure access to
+							Parmalat’s enterprise data warehouse. A web portal/CMS was built using
+							TypeScript and React to interface with this API in order to provide
+							farmers with insights into key metrics about their farm, and access to
+							important company news/documents. The application was deployed using
+							Parmalat's internal IIS server
 						</div>
 						<div className='project-link-container project-link-container-right'>
 							<div className='project-stack'>
@@ -68,24 +69,18 @@ export const Parmalat = () => {
 						afterAnimatedIn={() => setAnimateCarousel(true)}
 						className='project-image-container'>
 						<Carousel
-							key={`study${animateCarousel.toString()}`}
+							key={`parm${animateCarousel.toString()}`}
 							showThumbs={false}
-							autoPlay={true}
+							autoPlay={animateCarousel}
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<img
-								className='project-image'
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
-							<img
-								className='project-image'
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
+							<ProjectImage legend='Dashboard' URL='Parmalat/Dash.png' />
+							<ProjectImage legend='News Homepage' URL='Parmalat/News.png' />
+							<ProjectImage legend='News Article' URL='Parmalat/NewsStory.png' />
+							<ProjectImage legend='Login' URL='Parmalat/Login.png' />
+							<ProjectImage legend='Documents' URL='Parmalat/Docs.png' />
+							<ProjectImage legend='Documents CMS' URL='Parmalat/DocsBackend.png' />
 						</Carousel>
 					</ScrollAnimation>
 				</div>

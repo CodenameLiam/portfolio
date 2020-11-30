@@ -4,6 +4,7 @@ import Popup from "reactjs-popup";
 import { LanguageIcon } from "../Pages/Skills";
 import { Carousel } from "react-responsive-carousel";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
+import { ProjectImage } from "../Components/ProjectImage";
 
 export const StudySaviour = () => {
 	const [animateCarousel, setAnimateCarousel] = useState(false);
@@ -19,23 +20,15 @@ export const StudySaviour = () => {
 						className='project-image-container'>
 						<Carousel
 							key={`study${animateCarousel.toString()}`}
-							showThumbs={false}
 							autoPlay={animateCarousel}
+							showThumbs={false}
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<img
-								className='project-image'
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
-							<img
-								className='project-image'
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
+							<ProjectImage legend='Dashboard' URL='StudySaviour/Dashboard.png' />
+							<ProjectImage legend='Upload Notes' URL='StudySaviour/Upload.png' />
+							<ProjectImage legend='Liked Notes' URL='StudySaviour/LikedNotes.png' />
+							<ProjectImage legend='Login' URL='StudySaviour/Login.png' />
 						</Carousel>
 					</ScrollAnimation>
 					<ScrollAnimation
