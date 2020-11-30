@@ -9,27 +9,27 @@ import { ReactComponent as Mail } from "./../Media/Graphics/Mail.svg";
 
 export const Landing = () => {
 	return (
-		<section className="landing">
-			<Circle className="solar" id="solar" />
-			<Sparkles />
-			<div className="name-container">
-				<div className="name">
-					<span className="name-light">Liam</span>
-					<span className="name-bold">Percy</span>
-					<ScrollAnimation animateIn="fadeIn" delay={500}>
-						<p className="name-description">
+		<section className='landing'>
+			<Circle className='solar' id='solar' />
+			{/* <Sparkles /> */}
+			<div className='name-container'>
+				<div className='name'>
+					<span className='name-light'>Liam</span>
+					<span className='name-bold'>Percy</span>
+					<ScrollAnimation animateIn='fadeIn' delay={500}>
+						<p className='name-description'>
 							My name spelt backwards is
-							<Mail className="mail-icon" />
+							<Mail className='mail-icon' />
 						</p>
 					</ScrollAnimation>
 				</div>
 
-				<Cloud1 className="cloud-1-1" />
-				<Cloud1 className="cloud-1-2" />
-				<Cloud2 className="cloud-2-1" />
-				<Cloud2 className="cloud-2-2" />
+				<Cloud1 className='cloud-1-1' />
+				<Cloud1 className='cloud-1-2' />
+				<Cloud2 className='cloud-2-1' />
+				<Cloud2 className='cloud-2-2' />
 			</div>
-			<Border className="landing-border" />
+			{/* <Border className='landing-border' /> */}
 		</section>
 	);
 };

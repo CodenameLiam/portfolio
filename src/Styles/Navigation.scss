@@ -1,50 +1,70 @@
 .navigation {
-    position: fixed;
-    height: 55px;
+	position: fixed;
+	height: 55px;
 
-    width: 100%;
-    z-index: 100;
-    background: #313442;
+	width: 100%;
+	z-index: 100;
+	background: #313442;
 
-    transition: all 0.3s;
+	transition: all 0.3s;
 
-    .navigation-item {
-        color: $theme-light;
-        padding: 1rem 2rem;
-        visibility: visible;
-        // @media screen and (max-width: 700px) {
-        //     visibility: hidden;
-        // }
-    }
+	.navigation-item {
+		color: $theme-light;
+		padding: 1rem 2rem;
+		visibility: visible;
+		transition: color 0.3s;
 
-    .navigation-item-container {
-        display: flex;
-        justify-content: center;
-    }
+		&:hover {
+			cursor: pointer;
+			color: $theme-pink;
+		}
+	}
 
-    .navigation-item-container-mobile {
-        display: block;
+	.navigation-item-active {
+		color: $theme-orange;
+	}
 
-        .navigation-item {
-            visibility: hidden;
-        }
-    }
+	.navigation-item-container {
+		display: flex;
+		justify-content: center;
+	}
 
-    .navigation-item-container-mobile-open {
-        .navigation-item {
-            visibility: visible;
-        }
-    }
+	.navigation-item-container-mobile {
+		display: block;
 
-    .hamburger {
-        fill: $theme-light;
-        margin: auto 0rem;
-        visibility: hidden;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        @media screen and (max-width: 700px) {
-            visibility: visible;
-        }
-    }
+		.navigation-blocker {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 55px;
+			background: #313442;
+		}
+
+		.navigation-item-first {
+			margin-top: (calc(55px * -7));
+			transition: padding 0.5s ease-in-out;
+		}
+		.navigation-item {
+			text-align: center;
+			background: #313442;
+		}
+	}
+
+	.navigation-item-container-mobile-open {
+		.navigation-item-first {
+			padding-top: (calc(55px * 8));
+		}
+	}
+
+	.hamburger {
+		fill: $theme-light;
+		margin: auto 0rem;
+		visibility: hidden;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		@media screen and (max-width: 800px) {
+			visibility: visible;
+		}
+	}
 }

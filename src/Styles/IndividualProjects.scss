@@ -213,7 +213,17 @@
 	}
 }
 
-.contact-break {
+.awards-break {
 	background: #0f1014;
+	fill: $theme-dark;
+}
+
+.cultural-break {
+	background: $theme-dark;
+	fill: $theme-black;
+}
+
+.contact-break {
+	background: $theme-black;
 	fill: $theme-dark;
 }
