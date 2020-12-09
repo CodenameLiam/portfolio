@@ -1,82 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Carousel } from "react-responsive-carousel";
 import Popup from "reactjs-popup";
+import { ProjectImage } from "../Components/ProjectImage";
+import { ProjectLinks } from "../Components/ProjectLinks";
 import { LanguageIcon } from "../Pages/Skills";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
 
 export const PathFinder = () => {
-	return (
-		<div className="path-finder">
-			<div className="section-container">
-				<div className="project-container project-container-right">
-					<ScrollAnimation
-						animateIn="fadeInLeft"
-						animateOnce
-						className="project-text-container">
-						<div className="section-sub-title project-sub-title-right">
-							Machine Learning Path Finder
-							<Popup
-								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
-								}}
-								arrow={false}
-								position="bottom center"
-								trigger={<Link className="project-link-icon" />}>
-								<div>Test</div>
-							</Popup>
-						</div>
-						<div className="project-text-right">
-							<i>News Article Speech Synthesizer</i>
-						</div>
-						<div className="project-text-right">
-							Study Saviour provides students with a platform to share notes with each
-							other. This allows students to better understand a particular topic that
-							they may have missed in class, share knowledge in order to gain unique
-							insights into a subject, and cover more material by collaborating with
-							different members on the platform. The project was scalled elastically
-							using an AWS Application Load Balancer
-						</div>
-						<div className="project-link-container project-link-container-right">
-							<div className="project-stack">
-								<div className="stack-images">
-									<LanguageIcon url="Python.png" tooptip="Python" />
-								</div>
-								<div />
-							</div>
-						</div>
-					</ScrollAnimation>
+    const [animateCarousel, setAnimateCarousel] = useState(false);
 
-					<ScrollAnimation
-						animateIn="fadeInRight"
-						animateOnce
-						className="project-image-container">
-						<Carousel
-							showThumbs={false}
-							autoPlay={true}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<img
-								className="project-image"
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
-							<img
-								className="project-image"
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
-						</Carousel>
-					</ScrollAnimation>
-				</div>
-			</div>
-		</div>
-	);
+    return (
+        <div className="path-finder">
+            <div className="section-container">
+                <div className="project-container project-container-right">
+                    <ScrollAnimation animateIn="fadeInLeft" animateOnce className="project-text-container">
+                        <div className="section-sub-title project-sub-title-right">
+                            Machine Learning Path Finder
+                            <Popup
+                                contentStyle={{
+                                    background: "#1c1e26",
+                                    color: "#ffffff",
+                                    border: "none",
+                                    textAlign: "center",
+                                    marginTop: "0.5rem",
+                                }}
+                                arrow={false}
+                                position="bottom center"
+                                trigger={<Link className="project-link-icon" />}
+                            >
+                                <ProjectLinks
+                                    git="https://github.com/CodenameLiam/sokoban-path-finder"
+                                    pdf={process.env.PUBLIC_URL + "/Media/PathFinding.pdf"}
+                                />
+                            </Popup>
+                        </div>
+                        <div className="project-text-right">
+                            <i>Deep Search Tree Path Finding</i>
+                        </div>
+                        <div className="project-text-right">
+                            Sokoban is a puzzle computer game in which a player pushes boxes around a warehouse with the
+                            goal of placing them on designated target locations. This project involved the development
+                            and optimisation of an intelligent search agent in order to not only solve the Sokoban
+                            puzzle, but also minimise the amount of time taken to reach this solution state. The
+                            solution was written in Python, and makes use of the A* search algorithm to solve the game.
+                        </div>
+                        <div className="project-link-container project-link-container-right">
+                            <div className="project-stack">
+                                <div className="stack-images">
+                                    <LanguageIcon url="Python.png" tooptip="Python" />
+                                </div>
+                                <div />
+                            </div>
+                        </div>
+                    </ScrollAnimation>
+
+                    <ScrollAnimation
+                        animateIn="fadeInRight"
+                        animateOnce
+                        className="project-image-container"
+                        afterAnimatedIn={() => setAnimateCarousel(true)}
+                    >
+                        <Carousel
+                            key={`path${animateCarousel.toString()}`}
+                            showThumbs={false}
+                            autoPlay={animateCarousel}
+                            infiniteLoop={true}
+                            interval={5000}
+                            transitionTime={800}
+                        >
+                            <ProjectImage legend="Sokoban Path Finder" URL="Path/Game.png" />
+                            <ProjectImage legend="Path Finder Performance" URL="Path/Performance.png" />
+                        </Carousel>
+                    </ScrollAnimation>
+                </div>
+            </div>
+        </div>
+    );
 };
