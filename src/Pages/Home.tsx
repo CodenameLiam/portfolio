@@ -32,6 +32,18 @@ export const Home = () => {
 		return () => window.removeEventListener("scroll", onScroll);
 	}, []);
 
+	useEffect(() => {
+		const search = window.location.search;
+		const anchorTag = search.substring(1, search.length);
+
+		if (anchorTag) {
+			let anchorDiv = document.getElementsByClassName(anchorTag)[0] as HTMLElement;
+			if (anchorDiv) {
+				window.scrollTo(0, anchorDiv.offsetTop);
+			}
+		}
+	}, []);
+
 	const onScroll = () => {
 		if (activeNavRef(contactScrollRef)) {
 			setActiveHeader("contact");
@@ -63,6 +75,8 @@ export const Home = () => {
 	const awardsScrollRef = useRef<any>(null);
 	const culturalScrollRef = useRef<any>(null);
 	const contactScrollRef = useRef<any>(null);
+
+	// window.scrollTo(0, stuydSaviour.offsetTop);
 
 	return (
 		<ScrollContext.Provider
