@@ -135,11 +135,6 @@ export const Home = () => {
 				<SectionBreak className='contact-break' scrollRef={contactScrollRef} />
 				<Contact />
 			</div>
-
-			{/* <button ref={bottomScrollRef} onClick={() => scrollToRef(studyScrollRef)}>
-				Click to scroll
-			</button> */}
-			{/* </React.Fragment> */}
 		</ScrollContext.Provider>
 	);
 };
