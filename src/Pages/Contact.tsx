@@ -19,7 +19,9 @@ export const Contact = () => {
 				</div>
 
 				<div className='contact-buttons'>
-					<div className='contact-button resume'>
+					<div
+						className='contact-button resume'
+						onClick={() => window.open(process.env.PUBLIC_URL + "/Contact/Resume.pdf")}>
 						<div className='resume-text'>Resume</div>
 					</div>
 					<div

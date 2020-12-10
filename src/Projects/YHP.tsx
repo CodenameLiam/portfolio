@@ -28,7 +28,7 @@ export const YHP = () => {
 							<ProjectImage legend='Clinician Dashboard' URL='YHP/Dash.png' />
 							<ProjectImage legend='Goals' URL='YHP/Goals.png' />
 							<ProjectImage legend='Library' URL='YHP/Search.png' />
-							<ProjectImage legend='Tracker' URL='YHP/Tracking.png' />
+							<ProjectImage legend='Tracker' URL='YHP/PatientTracking.png' />
 							<ProjectImage legend='Patient Profile' URL='YHP/ProfileWeb.png' />
 							<ProjectImage legend='Mobile Application' URL='YHP/Mobile.png' />
 						</Carousel>

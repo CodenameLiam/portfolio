@@ -9,19 +9,19 @@ import Popup from "reactjs-popup";
 
 export const Skills = () => {
 	return (
-		<div className="skills">
-			<div className="section-container">
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-title">Skills</div>
+		<div className='skills'>
+			<div className='section-container'>
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='section-title'>Skills</div>
 				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-sub-title">Overview</div>
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='section-sub-title'>Overview</div>
 				</ScrollAnimation>
 
-				<div className="skills-overview">{renderSkillsOverview()}</div>
+				<div className='skills-overview'>{renderSkillsOverview()}</div>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-sub-title">
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='section-sub-title'>
 						Languages
 						<Popup
 							contentStyle={{
@@ -32,33 +32,33 @@ export const Skills = () => {
 								textAlign: "center",
 							}}
 							arrow={false}
-							position="bottom center"
+							position='bottom center'
 							on={["hover", "focus"]}
-							trigger={<Info className="tooltip-button" />}>
-							<span className="tooltip">
+							trigger={<Info className='tooltip-button' />}>
+							<span className='tooltip'>
 								I have worked with these languages extensively
 							</span>
 						</Popup>
 					</div>
 				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="icon-group-container">
-						<div className="icon-group language-group">
-							<LanguageIcon url="JS.png" tooptip="JavaScript" />
-							<LanguageIcon url="TS.png" tooptip="TypeScript" />
-							<LanguageIcon url="Python.png" tooptip="Python" />
-							<LanguageIcon url="C.svg" tooptip="C" />
-							<LanguageIcon url="CSharp.svg" tooptip="C#" />
-							<LanguageIcon url="Java.png" tooptip="Java" />
-							<LanguageIcon url="HTML.svg" tooptip="HTML" />
-							<LanguageIcon url="CSS.svg" tooptip="CSS" />
-							<LanguageIcon url="SASS.svg" tooptip="SASS" />
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='icon-group-container'>
+						<div className='icon-group language-group'>
+							<LanguageIcon url='JS.png' tooptip='JavaScript' />
+							<LanguageIcon url='TS.png' tooptip='TypeScript' />
+							<LanguageIcon url='Python.png' tooptip='Python' />
+							<LanguageIcon url='C.svg' tooptip='C' />
+							<LanguageIcon url='CSharp.svg' tooptip='C#' />
+							<LanguageIcon url='Java.png' tooptip='Java' />
+							<LanguageIcon url='HTML.svg' tooptip='HTML' />
+							<LanguageIcon url='CSS.svg' tooptip='CSS' />
+							<LanguageIcon url='Sass.svg' tooptip='SASS' />
 						</div>
 					</div>
 				</ScrollAnimation>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-sub-title">
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='section-sub-title'>
 						Tools
 						<Popup
 							contentStyle={{
@@ -69,10 +69,10 @@ export const Skills = () => {
 								textAlign: "center",
 							}}
 							arrow={false}
-							position="bottom center"
+							position='bottom center'
 							on={["hover", "focus"]}
-							trigger={<Info className="tooltip-button" />}>
-							<span className="tooltip">
+							trigger={<Info className='tooltip-button' />}>
+							<span className='tooltip'>
 								I use most these tools on a daily basis, and have solid working
 								experience with all of them
 							</span>
@@ -80,22 +80,22 @@ export const Skills = () => {
 					</div>
 				</ScrollAnimation>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="icon-group-container">
-						<div className="icon-group tool-group">
-							<LanguageIcon url="React.svg" tooptip="React JS / React Native" />
-							<LanguageIcon url="GraphQL.svg" tooptip="GraphQL" />
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='icon-group-container'>
+						<div className='icon-group tool-group'>
+							<LanguageIcon url='React.svg' tooptip='React JS / React Native' />
+							<LanguageIcon url='GraphQL.svg' tooptip='GraphQL' />
 							{/* <LanguageIcon url="Storybook.png" tooptip="Storybook JS" /> */}
-							<LanguageIcon url="Docker.png" tooptip="Docker" />
-							<LanguageIcon url="Postgres.png" tooptip="PostgreSQL" />
-							<LanguageIcon url="Git.png" tooptip="Git" />
-							<LanguageIcon url="Redis.png" tooptip="Redis" />
-							<LanguageIcon url="NET.svg" tooptip="ASP.NET" />
-							<LanguageIcon url="AWS.svg" tooptip="Amazon Web Services" />
-							<LanguageIcon url="Node.png" tooptip="Node JS / Express" />
-							<LanguageIcon url="MongoDB.png" tooptip="MongoDB" />
-							<LanguageIcon url="Firebase.png" tooptip="Firebase" />
-							<LanguageIcon url="Tensor.svg" tooptip="TensorFlow" />
+							<LanguageIcon url='Docker.png' tooptip='Docker' />
+							<LanguageIcon url='Postgres.png' tooptip='PostgreSQL' />
+							<LanguageIcon url='Git.png' tooptip='Git' />
+							<LanguageIcon url='Redis.png' tooptip='Redis' />
+							<LanguageIcon url='NET.svg' tooptip='ASP.NET' />
+							<LanguageIcon url='AWS.svg' tooptip='Amazon Web Services' />
+							<LanguageIcon url='Node.png' tooptip='Node JS / Express' />
+							<LanguageIcon url='MongoDB.png' tooptip='MongoDB' />
+							<LanguageIcon url='Firebase.png' tooptip='Firebase' />
+							<LanguageIcon url='Tensor.svg' tooptip='TensorFlow' />
 						</div>
 					</div>
 				</ScrollAnimation>
@@ -120,15 +120,15 @@ export const LanguageIcon = (props: ILanguageIconProps) => {
 				marginTop: "0.5rem",
 			}}
 			arrow={false}
-			position="bottom center"
+			position='bottom center'
 			on={["hover", "focus"]}
 			trigger={
 				<img
-					className="language-icon"
+					className='language-icon'
 					src={process.env.PUBLIC_URL + "/Tools/" + props.url}
 				/>
 			}>
-			<span className="tooltip">{props.tooptip}</span>
+			<span className='tooltip'>{props.tooptip}</span>
 		</Popup>
 	);
 };
@@ -142,11 +142,11 @@ interface ISkillOverviewProps {
 
 const SkillOverview = (props: ISkillOverviewProps) => {
 	return (
-		<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={props.delay}>
-			<div className="overview-content">
+		<ScrollAnimation animateIn='fadeInLeft' animateOnce delay={props.delay}>
+			<div className='overview-content'>
 				{props.icon}
-				<div className="overview-title">{props.title}</div>
-				<div className="overview-text">{props.text}</div>
+				<div className='overview-title'>{props.title}</div>
+				<div className='overview-text'>{props.text}</div>
 			</div>
 		</ScrollAnimation>
 	);
@@ -154,7 +154,7 @@ const SkillOverview = (props: ISkillOverviewProps) => {
 
 const SkillsOverviewContent: ISkillOverviewProps[] = [
 	{
-		icon: <Code className="skill-icon" />,
+		icon: <Code className='skill-icon' />,
 		title: "Development",
 		text: `Development is my craft. I love that it allows me to be creative,
 	solve complex problems, and ultimately build something great. I
@@ -163,7 +163,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 		delay: 100,
 	},
 	{
-		icon: <Design className="skill-icon" />,
+		icon: <Design className='skill-icon' />,
 		title: "Design",
 		text: `Creation is core to the human experience, and I am incredibly
 		passionate about producing work that hits the aesthetic sweet spot, 
@@ -171,7 +171,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 		delay: 200,
 	},
 	{
-		icon: <Ops className="skill-icon" />,
+		icon: <Ops className='skill-icon' />,
 		title: "Operations",
 		text: `There is no point making a product if no one can see how awesome it
 		is! I love architecting scalable, highly performant and fault
@@ -180,7 +180,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 		delay: 300,
 	},
 	{
-		icon: <Coms className="skill-icon" />,
+		icon: <Coms className='skill-icon' />,
 		title: "Teamwork",
 		text: `Team work makes the dream work! I am super passionate about sharing
 		knowledge, collaborating, learning from or mentoring others and
