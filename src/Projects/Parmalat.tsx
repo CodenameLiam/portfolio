@@ -30,11 +30,11 @@ export const Parmalat = () => {
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Test</div>
+								<div>Coming Soon</div>
 							</Popup>
 						</div>
 						<div className='project-text-right'>
-							<i>Business data API / user portal / CMS</i>
+							<i>Business Data API / User Portal / CMS</i>
 						</div>
 						<div className='project-text-right'>
 							Developed an API using C# (ASP.NET, EF Core) to provide secure access to

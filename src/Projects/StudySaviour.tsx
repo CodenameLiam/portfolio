@@ -48,11 +48,11 @@ export const StudySaviour = () => {
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Test</div>
+								<div>Coming Soon</div>
 							</Popup>
 						</div>
 						<div className='project-text-left'>
-							<i>Note sharing platform</i>
+							<i>Social Note Sharing Platform</i>
 						</div>
 						<div className='project-text-left'>
 							Study Saviour provides students with a platform to share notes with each

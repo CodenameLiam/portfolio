@@ -70,7 +70,7 @@ export const PathFinder = () => {
                             transitionTime={800}
                         >
                             <ProjectImage legend="Sokoban Path Finder" URL="Path/Game.png" />
-                            <ProjectImage legend="Path Finder Performance" URL="Path/Performance.png" />
+                            <ProjectImage legend="Algorithm Flow Diagram" URL="Path/FlowDiagram.png" />
                         </Carousel>
                     </ScrollAnimation>
                 </div>

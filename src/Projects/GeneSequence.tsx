@@ -49,11 +49,11 @@ export const GeneSequence = () => {
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Test</div>
+								<div>Coming Soon</div>
 							</Popup>
 						</div>
 						<div className='project-text-left'>
-							<i>Parallelisation of a bio-informatics application</i>
+							<i>Parallelisation of a Bio-Informatics Application</i>
 						</div>
 						<div className='project-text-left'>
 							This gene sequencing application parallelises a sequential Java

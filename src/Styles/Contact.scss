@@ -1,0 +1,93 @@
+.contact {
+	margin-bottom: 10rem;
+
+	.contact-buttons {
+		margin-bottom: 4rem;
+		.contact-button {
+			display: flex;
+			height: 3rem;
+			margin: auto;
+			margin-bottom: 2rem;
+			border-radius: 1rem;
+			width: 80%;
+			max-width: 20rem;
+			transition: all 0.3s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		.resume {
+			background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background-size: 400% 400%;
+			animation: gradient 10s ease infinite;
+		}
+
+		.resume-text {
+			margin: auto;
+			font-size: 1.2rem;
+			font-weight: 600;
+		}
+
+		.linkedin {
+			background: #2867b2;
+
+			img {
+				height: 2rem;
+				margin: auto;
+			}
+		}
+
+		.github {
+			background: #24292e;
+
+			img {
+				height: 2.5rem;
+				margin: auto;
+			}
+		}
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	.contact-sparkles {
+		position: relative;
+		height: 15rem;
+		width: 15rem;
+		margin: auto;
+		margin-top: -3rem;
+
+		.sparkle {
+			width: 50%;
+		}
+
+		.me {
+			margin-left: -2.5rem;
+			margin-top: 2.5rem;
+
+			border-radius: 50%;
+			height: 20rem;
+		}
+
+		@media screen and (max-width: 800px) {
+			height: 10rem;
+			width: 10rem;
+
+			.me {
+				height: 15rem;
+				width: 15rem;
+			}
+		}
+	}
+}

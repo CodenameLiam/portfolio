@@ -30,11 +30,11 @@ export const NewsReader = () => {
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Test</div>
+								<div>Coming Soon</div>
 							</Popup>
 						</div>
 						<div className='project-text-right'>
-							<i>News article text-to-speech synthesizer</i>
+							<i>News Article Text-to-Speech Synthesizer</i>
 						</div>
 						<div className='project-text-right'>
 							News reader harnesses the power of Google Cloud text-to-speech synthesis

@@ -51,11 +51,11 @@ export const YHP = () => {
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Test</div>
+								<div>Coming Soon</div>
 							</Popup>
 						</div>
 						<div className='project-text-left'>
-							<i>Health monitoring and wellness tool</i>
+							<i>Health Monitoring and Wellness Tool</i>
 						</div>
 						<div className='project-text-left'>
 							YourHealth+ supports and improves wellbeing, so that users can be

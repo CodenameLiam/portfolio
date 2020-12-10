@@ -1,44 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Popup from "reactjs-popup";
 import { LanguageIcon } from "../Pages/Skills";
 import { Carousel } from "react-responsive-carousel";
 import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
+import { ProjectLinks } from "../Components/ProjectLinks";
+import { ProjectImage } from "../Components/ProjectImage";
 
 export const Dist = () => {
+	const [animateCarousel, setAnimateCarousel] = useState(false);
+
 	return (
-		<div className="dist">
-			<div className="section-container">
-				<div className="project-container project-container-left">
+		<div className='dist'>
+			<div className='section-container'>
+				<div className='project-container project-container-left'>
 					<ScrollAnimation
-						animateIn="fadeInLeft"
+						animateIn='fadeInLeft'
 						animateOnce
-						className="project-image-container">
+						className='project-image-container'
+						afterAnimatedIn={() => setAnimateCarousel(true)}>
 						<Carousel
+							key={`dist${animateCarousel.toString()}`}
 							showThumbs={false}
-							autoPlay={true}
+							autoPlay={animateCarousel}
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<img
-								className="project-image"
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
-							/>
-							<img
-								className="project-image"
-								src={
-									process.env.PUBLIC_URL + "/Projects/StudySaviour/Dashboard.png"
-								}
+							<ProjectImage legend='Multi-Threading' URL='Dist/MultiThreading.png' />
+							<ProjectImage
+								legend='Memory Management and Signalling'
+								URL='Dist/MemMng.png'
 							/>
 						</Carousel>
 					</ScrollAnimation>
 					<ScrollAnimation
-						animateIn="fadeInRight"
+						animateIn='fadeInRight'
 						animateOnce
-						className="project-text-container">
-						<div className="section-sub-title project-sub-title-left">
+						className='project-text-container'>
+						<div className='section-sub-title project-sub-title-left'>
 							Distributed System
 							<Popup
 								contentStyle={{
@@ -49,26 +48,26 @@ export const Dist = () => {
 									marginTop: "0.5rem",
 								}}
 								arrow={false}
-								position="bottom center"
-								trigger={<Link className="project-link-icon" />}>
-								<div>Test</div>
+								position='bottom center'
+								trigger={<Link className='project-link-icon' />}>
+								<ProjectLinks git='https://github.com/CodenameLiam/distributed-system' />
 							</Popup>
 						</div>
-						<div className="project-text-left">
-							<i>Note sharing platform</i>
+						<div className='project-text-left'>
+							<i>Multi-Threaded Request Handler Using Sockets</i>
 						</div>
-						<div className="project-text-left">
-							Study Saviour provides students with a platform to share notes with each
-							other. This allows students to better understand a particular topic that
-							they may have missed in class, share knowledge in order to gain unique
-							insights into a subject, and cover more material by collaborating with
-							different members on the platform. The project uses an AWS application
-							load balancer to scale elastically
+						<div className='project-text-left'>
+							This project consists of two applications: an overseeer and a
+							controller. These two applications are networked using BSD sockets. The
+							overseeer runs indefinitely, and handles commands sent by multiple
+							controllers simultaneously using the pthreads API. Memory information
+							can be retreived from running processes, and the program can be
+							interrupted at any point through POSIX signals.
 						</div>
-						<div className="project-link-container">
-							<div className="project-stack">
-								<div className="stack-images">
-									<LanguageIcon url="C.svg" tooptip="C" />
+						<div className='project-link-container'>
+							<div className='project-stack'>
+								<div className='stack-images'>
+									<LanguageIcon url='C.svg' tooptip='C' />
 								</div>
 								<div />
 							</div>

@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Award, IAwardProps } from "./Awards";
 
 export const Cultural = () => {
 	return (
@@ -8,7 +9,42 @@ export const Cultural = () => {
 				<ScrollAnimation animateIn='fadeIn' animateOnce>
 					<div className='section-title'>Cultural</div>
 				</ScrollAnimation>
+
+				<div className='cultural-container'>{renderAwards()}</div>
 			</div>
 		</div>
 	);
+};
+
+const CulturalContent: IAwardProps[] = [
+	{
+		image: "VT.png",
+		title: "Certificate II Active Volunteering",
+		subTitle: "Volunteering Queensland 2016",
+		text: `Completed a Certificate II in Active Volunteering at Brisbane State High School, 
+		teaching small workshops in graphic, industrial and environmental design. Introduced students
+		to the principals of design using Autodesk software such as Inventor and Revit.`,
+		delay: 100,
+	},
+	{
+		image: "BSHS.png",
+		title: "Soocer Coach",
+		subTitle: "Brisbane State High School 2016",
+		text: `Was responsible for coaching a junior football team at Brisbane State High School. 
+		Organised training sessions, pre-match warmups and game tactics. Developed my skills as a leader
+		and mentor while assisting students to improve their playing skills.`,
+		delay: 200,
+	},
+];
+
+const renderAwards = () => {
+	return CulturalContent.map((award: IAwardProps) => (
+		<Award
+			title={award.title}
+			text={award.text}
+			subTitle={award.subTitle}
+			image={award.image}
+			delay={award.delay}
+		/>
+	));
 };
