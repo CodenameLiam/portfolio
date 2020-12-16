@@ -16,6 +16,7 @@ export const StudySaviour = () => {
 					<ScrollAnimation
 						animateIn='fadeInLeft'
 						animateOnce
+						// @ts-ignore
 						afterAnimatedIn={() => setAnimateCarousel(true)}
 						className='project-image-container'>
 						<Carousel
