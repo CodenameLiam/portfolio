@@ -66,6 +66,7 @@ export const Parmalat = () => {
 					<ScrollAnimation
 						animateIn='fadeInRight'
 						animateOnce
+						// @ts-ignore
 						afterAnimatedIn={() => setAnimateCarousel(true)}
 						className='project-image-container'>
 						<Carousel

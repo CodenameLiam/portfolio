@@ -59,6 +59,7 @@ export const PathFinder = () => {
                         animateIn="fadeInRight"
                         animateOnce
                         className="project-image-container"
+                        // @ts-ignore
                         afterAnimatedIn={() => setAnimateCarousel(true)}
                     >
                         <Carousel

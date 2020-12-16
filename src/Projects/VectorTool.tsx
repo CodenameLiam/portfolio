@@ -58,6 +58,7 @@ export const VectorTool = () => {
 						animateIn='fadeInRight'
 						animateOnce
 						className='project-image-container'
+						// @ts-ignore
 						afterAnimatedIn={() => setAnimateCarousel(true)}>
 						<Carousel
 							key={`vector${animateCarousel.toString()}`}

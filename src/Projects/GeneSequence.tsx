@@ -17,6 +17,7 @@ export const GeneSequence = () => {
 						animateIn='fadeInLeft'
 						animateOnce
 						className='project-image-container'
+						// @ts-ignore
 						afterAnimatedIn={() => setAnimateCarousel(true)}>
 						<Carousel
 							key={`gene${animateCarousel.toString()}`}

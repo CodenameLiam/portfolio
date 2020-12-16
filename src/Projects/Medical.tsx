@@ -18,6 +18,7 @@ export const Medical = () => {
                         animateIn="fadeInLeft"
                         animateOnce
                         className="project-image-container"
+                        // @ts-ignore
                         afterAnimatedIn={() => setAnimateCarousel(true)}
                     >
                         <Carousel

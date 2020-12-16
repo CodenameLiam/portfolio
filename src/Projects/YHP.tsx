@@ -17,6 +17,7 @@ export const YHP = () => {
 						animateIn='fadeInLeft'
 						animateOnce
 						className='project-image-container'
+						// @ts-ignore
 						afterAnimatedIn={() => setAnimateCarousel(true)}>
 						<Carousel
 							key={`yhp${animateCarousel.toString()}`}

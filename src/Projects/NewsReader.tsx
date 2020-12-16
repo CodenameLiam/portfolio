@@ -69,6 +69,7 @@ export const NewsReader = () => {
 						animateIn='fadeInRight'
 						animateOnce
 						className='project-image-container'
+						// @ts-ignore
 						afterAnimatedIn={() => setAnimateCarousel(true)}>
 						<Carousel
 							key={`news${animateCarousel.toString()}`}
