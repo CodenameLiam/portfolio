@@ -23,7 +23,7 @@ interface ILinkProps {
 const ProjectLink = (props: ILinkProps) => {
     return (
         <div className="link-container" onClick={() => window.open(props.link)}>
-            <img className="link-image" src={process.env.PUBLIC_URL + "/Tools/" + props.image} />
+            <img className="link-image" src={process.env.PUBLIC_URL + "/Tools/" + props.image} alt={props.description} />
             <div className="link-desciption">{props.description}</div>
         </div>
     );

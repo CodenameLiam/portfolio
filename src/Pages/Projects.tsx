@@ -58,6 +58,7 @@ const Project = (props: IProjectProps) => {
 				<img
 					className="overview-image"
 					src={process.env.PUBLIC_URL + "/Projects/" + props.image}
+					alt={props.title}
 				/>
 				<div className="overview-title">{props.title}</div>
 			</div>

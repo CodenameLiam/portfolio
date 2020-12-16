@@ -27,12 +27,12 @@ export const Contact = () => {
 					<div
 						className='contact-button linkedin'
 						onClick={() => window.open("https://www.linkedin.com/in/liam-percy/")}>
-						<img src={process.env.PUBLIC_URL + "/Contact/Linkedin.png"} />
+						<img src={process.env.PUBLIC_URL + "/Contact/Linkedin.png"} alt="LinkedIn"/>
 					</div>
 					<div
 						className='contact-button github'
 						onClick={() => window.open("https://github.com/CodenameLiam")}>
-						<img src={process.env.PUBLIC_URL + "/Contact/Github.png"} />
+						<img src={process.env.PUBLIC_URL + "/Contact/Github.png"} alt="Github" />
 					</div>
 				</div>
 
@@ -42,7 +42,7 @@ export const Contact = () => {
 
 				<div className='contact-sparkles'>
 					<Sparkles>
-						<img className='me' src={process.env.PUBLIC_URL + "/Contact/Me.jpg"} />
+						<img className='me' src={process.env.PUBLIC_URL + "/Contact/Me.jpg"} alt="Me!"/>
 					</Sparkles>
 				</div>
 			</ScrollAnimation>

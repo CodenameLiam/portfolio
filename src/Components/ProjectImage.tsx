@@ -14,16 +14,9 @@ export const ProjectImage = (props: IProjectImageProps) => {
 			<img
 				className='project-image'
 				src={process.env.PUBLIC_URL + "/Projects/" + props.URL}
+				alt={props.legend}
 			/>
 			<p className='legend'>{props.legend}</p>
-			{/* <Popup modal open={openImage}>
-				<div>
-					<img
-						className='preview-image'
-						src={process.env.PUBLIC_URL + "/Projects/" + props.URL}
-					/>
-				</div>
-			</Popup> */}
 		</div>
 	);
 };

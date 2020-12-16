@@ -126,6 +126,7 @@ export const LanguageIcon = (props: ILanguageIconProps) => {
 				<img
 					className='language-icon'
 					src={process.env.PUBLIC_URL + "/Tools/" + props.url}
+					alt={props.tooptip}
 				/>
 			}>
 			<span className='tooltip'>{props.tooptip}</span>

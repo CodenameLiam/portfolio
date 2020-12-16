@@ -29,6 +29,7 @@ export const Award = (props: IAwardProps) => {
 					<img
 						className='overview-image'
 						src={process.env.PUBLIC_URL + "/Awards/" + props.image}
+						alt={props.title}
 					/>
 				</div>
 
