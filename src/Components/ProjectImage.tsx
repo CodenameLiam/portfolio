@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Popup from "reactjs-popup";
+import React from "react";
 
 export interface IProjectImageProps {
 	legend: string;
@@ -7,8 +6,6 @@ export interface IProjectImageProps {
 }
 
 export const ProjectImage = (props: IProjectImageProps) => {
-	// const [openImage, setOpenImage] = useState(false);
-
 	return (
 		<div className='project-list-item'>
 			<img

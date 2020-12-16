@@ -1,7 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Sparkles } from "../Components/Sparkles/Sparkles";
-import { ReactComponent as Border } from "./../Media/Graphics/Border.svg";
 import { ReactComponent as Circle } from "./../Media/Graphics/Circle1.svg";
 import { ReactComponent as Cloud1 } from "./../Media/Graphics/Cloud1.svg";
 import { ReactComponent as Cloud2 } from "./../Media/Graphics/Cloud2.svg";
@@ -29,7 +28,6 @@ export const Landing = () => {
 				<Cloud2 className='cloud-2-1' />
 				<Cloud2 className='cloud-2-2' />
 			</div>
-			{/* <Border className='landing-border' /> */}
 		</section>
 	);
 };

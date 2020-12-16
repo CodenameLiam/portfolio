@@ -1,5 +1,4 @@
 import React from "react";
-import CodeBlock from "./Components/CodeBlock";
 import { Home } from "./Pages/Home";
 import "reactjs-popup/dist/index.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
