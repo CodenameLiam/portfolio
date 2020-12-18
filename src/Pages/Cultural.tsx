@@ -28,7 +28,7 @@ const CulturalContent: IAwardProps[] = [
 	},
 	{
 		image: "BSHS.png",
-		title: "Soocer Coach",
+		title: "Soccer Coach",
 		subTitle: "Brisbane State High School 2016",
 		text: `Was responsible for coaching a junior football team at Brisbane State High School. 
 		Organised training sessions, pre-match warmups and game tactics. Developed my skills as a leader
