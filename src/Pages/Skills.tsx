@@ -143,7 +143,7 @@ export const Skills = () => {
 								tooptip='Google Cloud Platform / Services'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Docker_ema1xe.webp'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/NET_oo3zau.svg'
 								tooptip='ASP.NET'
 							/>
 							<LanguageIcon

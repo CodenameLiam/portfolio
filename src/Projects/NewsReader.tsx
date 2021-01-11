@@ -89,19 +89,19 @@ export const NewsReader = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Landing Page'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372937/Home_gh0x2j.webp'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/Home_gh0x2j.webp'
 							/>
 							<ProjectImage
 								legend='News Article Speech Playback'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Playback_x6okju.webp'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Playback_x6okju.webp'
 							/>
 							<ProjectImage
 								legend='Explore Article'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Explore_r3fejg.webp'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610379271/Explore_knbmiz.webp'
 							/>
 							<ProjectImage
 								legend='Select Voice'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372937/SelectVoice_qfxghu.webp'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/SelectVoice_qfxghu.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>
