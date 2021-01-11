@@ -28,9 +28,12 @@ export const GeneSequence = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Speedup Graph (Sequential vs Non-Seqential)'
-								URL='Gene/Speedup.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/Speedup_abnwvy.png'
 							/>
-							<ProjectImage legend='Output' URL='Gene/Output.jpg' />
+							<ProjectImage
+								legend='Output'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/Output_htppdy.png'
+							/>
 						</Carousel>
 					</ScrollAnimation>
 					<ScrollAnimation
@@ -68,7 +71,7 @@ export const GeneSequence = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='Java.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/Java_mhw6z4.png'
 										tooptip='Java / Java Executor Framework'
 									/>
 								</div>

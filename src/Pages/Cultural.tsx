@@ -18,7 +18,7 @@ export const Cultural = () => {
 
 const CulturalContent: IAwardProps[] = [
 	{
-		image: "VT.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/VT_a8d5b5.png",
 		title: "Certificate II Active Volunteering",
 		subTitle: "Volunteering Queensland 2016",
 		text: `Completed a Certificate II in Active Volunteering at Brisbane State High School, 
@@ -27,7 +27,8 @@ const CulturalContent: IAwardProps[] = [
 		delay: 100,
 	},
 	{
-		image: "BSHS.png",
+		image:
+			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_592/v1610372948/BSHS_tnlhcp.png",
 		title: "Soccer Coach",
 		subTitle: "Brisbane State High School 2016",
 		text: `Was responsible for coaching a junior football team at Brisbane State High School. 
@@ -40,6 +41,7 @@ const CulturalContent: IAwardProps[] = [
 const renderAwards = () => {
 	return CulturalContent.map((award: IAwardProps) => (
 		<Award
+			key={award.title}
 			title={award.title}
 			text={award.text}
 			subTitle={award.subTitle}

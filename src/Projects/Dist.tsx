@@ -27,10 +27,13 @@ export const Dist = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Multi-Threading' URL='Dist/MultiThreading.jpg' />
+							<ProjectImage
+								legend='Multi-Threading'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/MultiThreading_vnwgz9.png'
+							/>
 							<ProjectImage
 								legend='Memory Management and Signalling'
-								URL='Dist/MemMng.jpg'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/MemMng_fvwuby.png'
 							/>
 						</Carousel>
 					</ScrollAnimation>
@@ -68,7 +71,10 @@ export const Dist = () => {
 						<div className='project-link-container'>
 							<div className='project-stack'>
 								<div className='stack-images'>
-									<LanguageIcon url='C.svg' tooptip='C' />
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/C_ihehoc.svg'
+										tooptip='C'
+									/>
 								</div>
 								<div />
 							</div>

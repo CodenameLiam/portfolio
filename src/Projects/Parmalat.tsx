@@ -48,16 +48,25 @@ export const Parmalat = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='React.svg'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/React_ylb6k9.svg'
 										tooptip='React JS / React Native'
 									/>
-									<LanguageIcon url='GraphQL.svg' tooptip='GraphQL' />
-									<LanguageIcon url='NET.svg' tooptip='ASP.NET' />
 									<LanguageIcon
-										url='IIS.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/GraphQL_c98kdt.svg'
+										tooptip='GraphQL'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/NET_oo3zau.svg'
+										tooptip='ASP.NET'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/IIS_siqdgg.png'
 										tooptip='Microsoft IIS / SQL Server'
 									/>
-									<LanguageIcon url='Docker.png' tooptip='Docker' />
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+										tooptip='Docker'
+									/>
 								</div>
 								<div />
 							</div>
@@ -76,11 +85,26 @@ export const Parmalat = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Dashboard' URL='Parmalat/Dash.jpg' />
-							<ProjectImage legend='News Homepage' URL='Parmalat/News.jpg' />
-							<ProjectImage legend='News Article' URL='Parmalat/NewsStory.jpg' />
-							<ProjectImage legend='Login' URL='Parmalat/Login.jpg' />
-							<ProjectImage legend='Documents' URL='Parmalat/Docs.jpg' />
+							<ProjectImage
+								legend='Dashboard'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Dash_flz6m7.png'
+							/>
+							<ProjectImage
+								legend='News Homepage'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/News_vwibm8.png'
+							/>
+							<ProjectImage
+								legend='News Article'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/NewsStory_doah0x.png'
+							/>
+							<ProjectImage
+								legend='Login'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Login_fflikb.png'
+							/>
+							<ProjectImage
+								legend='Documents'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Docs_xrweob.png'
+							/>
 							<ProjectImage legend='Documents CMS' URL='Parmalat/DocsBackend.jpg' />
 						</Carousel>
 					</ScrollAnimation>

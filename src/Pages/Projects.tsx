@@ -10,14 +10,14 @@ interface IProjectsRefs {
 
 export const Projects = (props: IProjectsRefs) => {
 	return (
-		<div className="projects">
-			<div className="section-container">
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-title">Projects</div>
+		<div className='projects'>
+			<div className='section-container'>
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='section-title'>Projects</div>
 				</ScrollAnimation>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<div className="section-sub-title">
+				<ScrollAnimation animateIn='fadeIn' animateOnce>
+					<div className='section-sub-title'>
 						Overview
 						<Popup
 							contentStyle={{
@@ -28,15 +28,15 @@ export const Projects = (props: IProjectsRefs) => {
 								textAlign: "center",
 							}}
 							arrow={false}
-							position="bottom center"
+							position='bottom center'
 							on={["hover", "focus"]}
-							trigger={<Info className="tooltip-button" />}>
-							<span className="tooltip">Click on a project to see more info!</span>
+							trigger={<Info className='tooltip-button' />}>
+							<span className='tooltip'>Click on a project to see more info!</span>
 						</Popup>
 					</div>
 				</ScrollAnimation>
 
-				<div className="projects-overview">{renderProjectContent()}</div>
+				<div className='projects-overview'>{renderProjectContent()}</div>
 			</div>
 		</div>
 	);
@@ -53,14 +53,10 @@ const Project = (props: IProjectProps) => {
 	const scrollRefs = useContext(ScrollContext);
 
 	return (
-		<ScrollAnimation animateIn="fadeInLeft" animateOnce delay={props.delay}>
-			<div className="overview-content" onClick={scrollRefs[props.scrollRef]}>
-				<img
-					className="overview-image"
-					src={process.env.PUBLIC_URL + "/Projects/" + props.image}
-					alt={props.title}
-				/>
-				<div className="overview-title">{props.title}</div>
+		<ScrollAnimation animateIn='fadeInLeft' animateOnce delay={props.delay}>
+			<div className='overview-content' onClick={scrollRefs[props.scrollRef]}>
+				<img className='overview-image' src={props.image} alt={props.title} />
+				<div className='overview-title'>{props.title}</div>
 			</div>
 		</ScrollAnimation>
 	);
@@ -70,56 +66,57 @@ const ProjectContent: IProjectProps[] = [
 	{
 		delay: 100,
 		title: "Study Saviour",
-		image: "StudySaviour.png",
+		image:
+			"https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/StudySaviour_tsorse.png",
 		scrollRef: "studyScrollRef",
 	},
 	{
 		delay: 200,
 		title: "Parmalat Australia",
-		image: "Parm.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Parm_mxcoit.png",
 		scrollRef: "parmScrollRef",
 	},
 	{
 		delay: 300,
 		title: "YourHealth+",
-		image: "YHP.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/YHP_piibbi.png",
 		scrollRef: "YHPScrollRef",
 	},
 
 	{
 		delay: 100,
 		title: "News Reader",
-		image: "News.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/News_yqhksz.png",
 		scrollRef: "newsScrollRef",
 	},
 	{
 		delay: 200,
 		title: "Gene Sequencer",
-		image: "Gene.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/Gene_aghbil.png",
 		scrollRef: "geneScrollRef",
 	},
 	{
 		delay: 300,
 		title: "Vector Graphics Design Tool",
-		image: "VDT.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/VDT_krrbrc.png",
 		scrollRef: "vectorScrollRef",
 	},
 	{
 		delay: 100,
 		title: "Machine Learning Medical Diagnosis",
-		image: "MLMD.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/MLMD_hevruc.png",
 		scrollRef: "medScrollRef",
 	},
 	{
 		delay: 200,
 		title: "Machine Learning Path Finder",
-		image: "Path.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Path_q4qm4v.png",
 		scrollRef: "pathScrollRef",
 	},
 	{
 		delay: 300,
 		title: "Multi-Threaded Distributed System",
-		image: "Dist.png",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372935/Dist_gef5sc.png",
 		scrollRef: "distScrollRef",
 	},
 ];
@@ -127,6 +124,7 @@ const ProjectContent: IProjectProps[] = [
 const renderProjectContent = () => {
 	return ProjectContent.map((project: IProjectProps) => (
 		<Project
+			key={project.title}
 			delay={project.delay}
 			title={project.title}
 			image={project.image}

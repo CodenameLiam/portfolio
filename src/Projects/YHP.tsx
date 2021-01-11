@@ -11,7 +11,11 @@ export const YHP = () => {
 
 	return (
 		<div className='yhp'>
-			<img className="tree" src={process.env.PUBLIC_URL + "/Projects/YHP/Tree.png"} alt="tree"/>
+			<img
+				className='tree'
+				src='https://res.cloudinary.com/djeukcxxb/image/upload/v1610373915/Tree_n2bf33.png'
+				alt='tree'
+			/>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
 					<ScrollAnimation
@@ -27,12 +31,30 @@ export const YHP = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Clinician Dashboard' URL='YHP/Dash.jpg' />
-							<ProjectImage legend='Goals' URL='YHP/Goals.jpg' />
-							<ProjectImage legend='Library' URL='YHP/Search.jpg' />
-							<ProjectImage legend='Tracker' URL='YHP/PatientTracking.jpg' />
-							<ProjectImage legend='Patient Profile' URL='YHP/ProfileWeb.jpg' />
-							<ProjectImage legend='Mobile Application' URL='YHP/Mobile.jpg' />
+							<ProjectImage
+								legend='Clinician Dashboard'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Dash_ly9crd.png'
+							/>
+							<ProjectImage
+								legend='Goals'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/Goals_cpokxc.png'
+							/>
+							<ProjectImage
+								legend='Library'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/Search_lpggfw.png'
+							/>
+							<ProjectImage
+								legend='Tracker'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/PatientTracking_eszpuu.png'
+							/>
+							<ProjectImage
+								legend='Patient Profile'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/ProfileWeb_r0nefq.png'
+							/>
+							<ProjectImage
+								legend='Mobile Application'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/Mobile_e8xg3z.png'
+							/>
 						</Carousel>
 					</ScrollAnimation>
 
@@ -71,14 +93,29 @@ export const YHP = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='React.svg'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/React_ylb6k9.svg'
 										tooptip='React JS / React Native'
 									/>
-									<LanguageIcon url='GraphQL.svg' tooptip='GraphQL' />
-									<LanguageIcon url='NET.svg' tooptip='ASP.NET' />
-									<LanguageIcon url='Postgres.png' tooptip='PostgreSQL' />
-									<LanguageIcon url='Docker.png' tooptip='Docker' />
-									<LanguageIcon url='AWS.svg' tooptip='Amazon Web Services EC2' />
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/GraphQL_c98kdt.svg'
+										tooptip='GraphQL'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/NET_oo3zau.svg'
+										tooptip='ASP.NET'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Postgres_a2z8pz.png'
+										tooptip='PostgreSQL'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+										tooptip='Docker'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/AWS_uujxmk.svg'
+										tooptip='Amazon Web Services EC2'
+									/>
 								</div>
 								<div />
 							</div>

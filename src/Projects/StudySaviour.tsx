@@ -26,10 +26,22 @@ export const StudySaviour = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Dashboard' URL='StudySaviour/Dashboard.png' />
-							<ProjectImage legend='Upload Notes' URL='StudySaviour/Upload.png' />
-							<ProjectImage legend='Liked Notes' URL='StudySaviour/LikedNotes.png' />
-							<ProjectImage legend='Login' URL='StudySaviour/Login.png' />
+							<ProjectImage
+								legend='Dashboard'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Dashboard_wfwsen.png'
+							/>
+							<ProjectImage
+								legend='Upload Notes'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Upload_l3smtr.png'
+							/>
+							<ProjectImage
+								legend='Liked Notes'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/LikedNotes_d0ah20.png'
+							/>
+							<ProjectImage
+								legend='Login'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Login_thjcue.png'
+							/>
 						</Carousel>
 					</ScrollAnimation>
 					<ScrollAnimation
@@ -66,15 +78,24 @@ export const StudySaviour = () => {
 						<div className='project-link-container'>
 							<div className='project-stack'>
 								<div className='stack-images'>
-									<LanguageIcon url='React.svg' tooptip='React JS' />
-									<LanguageIcon url='Node.png' tooptip='Node JS / Express' />
 									<LanguageIcon
-										url='Firebase.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/React_ylb6k9.svg'
+										tooptip='React JS'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Node_oonmq9.png'
+										tooptip='Node JS / Express'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Firebase_wnhx7u.png'
 										tooptip='Firebase Auth / Firestore'
 									/>
-									<LanguageIcon url='Redis.png' tooptip='Redis' />
 									<LanguageIcon
-										url='AWS.svg'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Redis_birwsp.png'
+										tooptip='Redis'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/AWS_uujxmk.svg'
 										tooptip='Amazon Web Services EC2 / Load Balancer'
 									/>
 								</div>

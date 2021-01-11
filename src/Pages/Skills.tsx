@@ -44,18 +44,50 @@ export const Skills = () => {
 				<ScrollAnimation animateIn='fadeIn' animateOnce>
 					<div className='icon-group-container'>
 						<div className='icon-group language-group'>
-							<LanguageIcon url='JS.png' tooptip='JavaScript' />
-							<LanguageIcon url='TS.png' tooptip='TypeScript' />
-							<LanguageIcon url='Python.png' tooptip='Python' />
-							<LanguageIcon url='C.svg' tooptip='C' />
-							<LanguageIcon url='CPP.svg' tooptip='C++' />
-							<LanguageIcon url='CSharp.svg' tooptip='C#' />
-							<LanguageIcon url='HTML.svg' tooptip='HTML' />
-							<LanguageIcon url='CSS.svg' tooptip='CSS' />
-							<LanguageIcon url='Sass.svg' tooptip='SASS' />
-							<LanguageIcon url='Java.png' tooptip='Java' />
-							<LanguageIcon url='Go.svg' tooptip='Go' />
-							
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/JS_otubhb.png'
+								tooptip='JavaScript'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372947/TS_e5oa7v.png'
+								tooptip='TypeScript'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Python_jitmhh.png'
+								tooptip='Python'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/C_ihehoc.svg'
+								tooptip='C'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610374423/CPP_byfgl8.svg'
+								tooptip='C++'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/CSharp_jm9d1h.svg'
+								tooptip='C#'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/HTML_ur0zla.svg'
+								tooptip='HTML'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/CSS_cf1d9i.svg'
+								tooptip='CSS'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Sass_yya5nf.svg'
+								tooptip='SASS'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/Java_mhw6z4.png'
+								tooptip='Java'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610374423/Go_kbjj1l.svg'
+								tooptip='Go'
+							/>
 						</div>
 					</div>
 				</ScrollAnimation>
@@ -86,22 +118,70 @@ export const Skills = () => {
 				<ScrollAnimation animateIn='fadeIn' animateOnce>
 					<div className='icon-group-container'>
 						<div className='icon-group tool-group'>
-							<LanguageIcon url='React.svg' tooptip='React JS / React Native' />
-							<LanguageIcon url='GraphQL.svg' tooptip='GraphQL' />
-							<LanguageIcon url="Storybook.png" tooptip="Storybook JS" />
-							<LanguageIcon url='Docker.png' tooptip='Docker' />
-							<LanguageIcon url='Postgres.png' tooptip='PostgreSQL' />
-							<LanguageIcon url='GoogCloud.svg' tooptip='Google Cloud Platform / Services' />
-							<LanguageIcon url='NET.svg' tooptip='ASP.NET' />
-							<LanguageIcon url='AWS.svg' tooptip='Amazon Web Services' />
-							<LanguageIcon url='Redis.png' tooptip='Redis' />
-							<LanguageIcon url='Git.png' tooptip='Git' />
-							<LanguageIcon url='Firebase.png' tooptip='Firebase' />
-							<LanguageIcon url='Tensor.svg' tooptip='TensorFlow' />
-							<LanguageIcon url='Node.png' tooptip='NodeJS / Express' />
-							<LanguageIcon url='MongoDB.png' tooptip='MongoDB' />
-							<LanguageIcon url='Gatsby.svg' tooptip='Gatsby' />
-							<LanguageIcon url='Next.svg' tooptip='NextJS' />
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/React_ylb6k9.svg'
+								tooptip='React JS / React Native'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/GraphQL_c98kdt.svg'
+								tooptip='GraphQL'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Storybook_w75hul.png'
+								tooptip='Storybook JS'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+								tooptip='Docker'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Postgres_a2z8pz.png'
+								tooptip='PostgreSQL'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/GCP_dehx3p.svg'
+								tooptip='Google Cloud Platform / Services'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+								tooptip='ASP.NET'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/AWS_uujxmk.svg'
+								tooptip='Amazon Web Services'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Redis_birwsp.png'
+								tooptip='Redis'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/Git_j60lyr.png'
+								tooptip='Git'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Firebase_wnhx7u.png'
+								tooptip='Firebase'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Tensor_a8dnxv.svg'
+								tooptip='TensorFlow'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Node_oonmq9.png'
+								tooptip='NodeJS / Express'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/MongoDB_xqnpcm.png'
+								tooptip='MongoDB'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610374423/Gatsby_s4s8ty.svg'
+								tooptip='Gatsby'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610374423/Next_uwsqie.svg'
+								tooptip='NextJS'
+							/>
 						</div>
 					</div>
 				</ScrollAnimation>
@@ -128,13 +208,7 @@ export const LanguageIcon = (props: ILanguageIconProps) => {
 			arrow={false}
 			position='bottom center'
 			on={["hover", "focus"]}
-			trigger={
-				<img
-					className='language-icon'
-					src={process.env.PUBLIC_URL + "/Tools/" + props.url}
-					alt={props.tooptip}
-				/>
-			}>
+			trigger={<img className='language-icon' src={props.url} alt={props.tooptip} />}>
 			<span className='tooltip'>{props.tooptip}</span>
 		</Popup>
 	);
@@ -199,6 +273,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 const renderSkillsOverview = () => {
 	return SkillsOverviewContent.map((skill: ISkillOverviewProps) => (
 		<SkillOverview
+			key={skill.title}
 			title={skill.title}
 			text={skill.text}
 			icon={skill.icon}

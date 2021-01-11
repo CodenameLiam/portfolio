@@ -8,11 +8,7 @@ export interface IProjectImageProps {
 export const ProjectImage = (props: IProjectImageProps) => {
 	return (
 		<div className='project-list-item'>
-			<img
-				className='project-image'
-				src={process.env.PUBLIC_URL + "/Projects/" + props.URL}
-				alt={props.legend}
-			/>
+			<img className='project-image' src={props.URL} alt={props.legend} />
 			<p className='legend'>{props.legend}</p>
 		</div>
 	);

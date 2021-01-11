@@ -47,7 +47,10 @@ export const VectorTool = () => {
 						<div className='project-link-container project-link-container-right'>
 							<div className='project-stack'>
 								<div className='stack-images'>
-									<LanguageIcon url='Java.png' tooptip='Java' />
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/Java_mhw6z4.png'
+										tooptip='Java'
+									/>
 								</div>
 								<div />
 							</div>
@@ -67,12 +70,18 @@ export const VectorTool = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Shape Tools' URL='Vector/Shapes.png' />
+							<ProjectImage
+								legend='Shape Tools'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Shapes_k49hak.png'
+							/>
 							<ProjectImage
 								legend='Transparent Shapes'
-								URL='Vector/Transparent.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Transparent_gs8qte.png'
 							/>
-							<ProjectImage legend='Colour Picker' URL='Vector/Color.png' />
+							<ProjectImage
+								legend='Colour Picker'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Color_ehlnwo.png'
+							/>
 						</Carousel>
 					</ScrollAnimation>
 				</div>

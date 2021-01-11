@@ -26,11 +26,7 @@ export const Award = (props: IAwardProps) => {
 		<ScrollAnimation animateIn='fadeInLeft' animateOnce delay={props.delay}>
 			<div className='overview-content'>
 				<div className='overview-image-container'>
-					<img
-						className='overview-image'
-						src={process.env.PUBLIC_URL + "/Awards/" + props.image}
-						alt={props.title}
-					/>
+					<img className='overview-image' src={props.image} alt={props.title} />
 				</div>
 
 				<div className='overview-title'>{props.title}</div>
@@ -43,7 +39,8 @@ export const Award = (props: IAwardProps) => {
 
 const AwardContent: IAwardProps[] = [
 	{
-		image: "BestProject.jpg",
+		image:
+			"https://res.cloudinary.com/djeukcxxb/image/upload/v1610372947/BestProject_o9iw4f.jpg",
 		title: "Best Overall Project",
 		subTitle: "UQCS 2020 Hackathon",
 		text: `Competed in the University of Queensland Computer 
@@ -53,7 +50,8 @@ const AwardContent: IAwardProps[] = [
 		delay: 100,
 	},
 	{
-		image: "PeoplesChoice.jpg",
+		image:
+			"https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/PeoplesChoice_yr26nv.jpg",
 		title: "Peoples Choice Award",
 		subTitle: "UQCS 2020 Hackathon",
 		text: `Competed in the University of Queensland Computer 
@@ -62,7 +60,7 @@ const AwardContent: IAwardProps[] = [
 		delay: 200,
 	},
 	{
-		image: "Deans.jpg",
+		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/Deans_qrcfeh.png",
 		title: "Dean's Scholar",
 		subTitle: "QUT 2017-Present",
 		text: `Achieved a grade point average (GPA) of 6.5 or 
@@ -75,6 +73,7 @@ const AwardContent: IAwardProps[] = [
 const renderAwards = () => {
 	return AwardContent.map((award: IAwardProps) => (
 		<Award
+			key={award.title}
 			title={award.title}
 			text={award.text}
 			subTitle={award.subTitle}

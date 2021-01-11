@@ -49,16 +49,25 @@ export const NewsReader = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='React.svg'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/React_ylb6k9.svg'
 										tooptip='React JS / React Native'
 									/>
-									<LanguageIcon url='Node.png' tooptip='Node JS / Express' />
 									<LanguageIcon
-										url='GCP.svg'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Node_oonmq9.png'
+										tooptip='Node JS / Express'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/GCP_dehx3p.svg'
 										tooptip='Google Cloud Text-To-Speech'
 									/>
-									<LanguageIcon url='Docker.png' tooptip='Docker' />
-									<LanguageIcon url='AWS.svg' tooptip='Amazon Web Services EC2' />
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+										tooptip='Docker'
+									/>
+									<LanguageIcon
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/AWS_uujxmk.svg'
+										tooptip='Amazon Web Services EC2'
+									/>
 								</div>
 								<div />
 							</div>
@@ -78,13 +87,22 @@ export const NewsReader = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Landing Page' URL='News/Home.png' />
+							<ProjectImage
+								legend='Landing Page'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/Home_gh0x2j.png'
+							/>
 							<ProjectImage
 								legend='News Article Speech Playback'
-								URL='News/Playback.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Playback_x6okju.png'
 							/>
-							<ProjectImage legend='Explore Article' URL='News/Explore.png' />
-							<ProjectImage legend='Select Voice' URL='News/SelectVoice.png' />
+							<ProjectImage
+								legend='Explore Article'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Explore_r3fejg.png'
+							/>
+							<ProjectImage
+								legend='Select Voice'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/SelectVoice_qfxghu.png'
+							/>
 						</Carousel>
 					</ScrollAnimation>
 				</div>
