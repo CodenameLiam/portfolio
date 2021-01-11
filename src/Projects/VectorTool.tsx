@@ -48,7 +48,7 @@ export const VectorTool = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/Java_mhw6z4.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372944/Java_mhw6z4.webp'
 										tooptip='Java'
 									/>
 								</div>
@@ -72,15 +72,15 @@ export const VectorTool = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Shape Tools'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Shapes_k49hak.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Shapes_k49hak.webp'
 							/>
 							<ProjectImage
 								legend='Transparent Shapes'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Transparent_gs8qte.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Transparent_gs8qte.webp'
 							/>
 							<ProjectImage
 								legend='Colour Picker'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Color_ehlnwo.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Color_ehlnwo.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>

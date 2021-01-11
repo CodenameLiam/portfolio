@@ -18,7 +18,8 @@ export const Cultural = () => {
 
 const CulturalContent: IAwardProps[] = [
 	{
-		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/VT_a8d5b5.png",
+		image:
+			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_100/v1610372948/VT_a8d5b5.webp",
 		title: "Certificate II Active Volunteering",
 		subTitle: "Volunteering Queensland 2016",
 		text: `Completed a Certificate II in Active Volunteering at Brisbane State High School, 
@@ -28,7 +29,7 @@ const CulturalContent: IAwardProps[] = [
 	},
 	{
 		image:
-			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_592/v1610372948/BSHS_tnlhcp.png",
+			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_100/v1610372948/BSHS_tnlhcp.webp",
 		title: "Soccer Coach",
 		subTitle: "Brisbane State High School 2016",
 		text: `Was responsible for coaching a junior football team at Brisbane State High School. 

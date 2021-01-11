@@ -33,27 +33,27 @@ export const YHP = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Clinician Dashboard'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Dash_ly9crd.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372940/Dash_ly9crd.webp'
 							/>
 							<ProjectImage
 								legend='Goals'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/Goals_cpokxc.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Goals_cpokxc.webp'
 							/>
 							<ProjectImage
 								legend='Library'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/Search_lpggfw.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Search_lpggfw.webp'
 							/>
 							<ProjectImage
 								legend='Tracker'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/PatientTracking_eszpuu.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/PatientTracking_eszpuu.webp'
 							/>
 							<ProjectImage
 								legend='Patient Profile'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/ProfileWeb_r0nefq.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/ProfileWeb_r0nefq.webp'
 							/>
 							<ProjectImage
 								legend='Mobile Application'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372941/Mobile_e8xg3z.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Mobile_e8xg3z.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>
@@ -105,11 +105,11 @@ export const YHP = () => {
 										tooptip='ASP.NET'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Postgres_a2z8pz.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Postgres_a2z8pz.webp'
 										tooptip='PostgreSQL'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Docker_ema1xe.webp'
 										tooptip='Docker'
 									/>
 									<LanguageIcon

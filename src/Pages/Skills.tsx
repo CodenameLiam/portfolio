@@ -45,15 +45,15 @@ export const Skills = () => {
 					<div className='icon-group-container'>
 						<div className='icon-group language-group'>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/JS_otubhb.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/JS_otubhb.webp'
 								tooptip='JavaScript'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372947/TS_e5oa7v.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372947/TS_e5oa7v.webp'
 								tooptip='TypeScript'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Python_jitmhh.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Python_jitmhh.webp'
 								tooptip='Python'
 							/>
 							<LanguageIcon
@@ -81,7 +81,7 @@ export const Skills = () => {
 								tooptip='SASS'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/Java_mhw6z4.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372944/Java_mhw6z4.webp'
 								tooptip='Java'
 							/>
 							<LanguageIcon
@@ -127,15 +127,15 @@ export const Skills = () => {
 								tooptip='GraphQL'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Storybook_w75hul.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372946/Storybook_w75hul.webp'
 								tooptip='Storybook JS'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Docker_ema1xe.webp'
 								tooptip='Docker'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Postgres_a2z8pz.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Postgres_a2z8pz.webp'
 								tooptip='PostgreSQL'
 							/>
 							<LanguageIcon
@@ -143,7 +143,7 @@ export const Skills = () => {
 								tooptip='Google Cloud Platform / Services'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Docker_ema1xe.webp'
 								tooptip='ASP.NET'
 							/>
 							<LanguageIcon
@@ -151,15 +151,15 @@ export const Skills = () => {
 								tooptip='Amazon Web Services'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Redis_birwsp.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372946/Redis_birwsp.webp'
 								tooptip='Redis'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372943/Git_j60lyr.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372943/Git_j60lyr.webp'
 								tooptip='Git'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Firebase_wnhx7u.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Firebase_wnhx7u.webp'
 								tooptip='Firebase'
 							/>
 							<LanguageIcon
@@ -167,11 +167,11 @@ export const Skills = () => {
 								tooptip='TensorFlow'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Node_oonmq9.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Node_oonmq9.webp'
 								tooptip='NodeJS / Express'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/MongoDB_xqnpcm.png'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/MongoDB_xqnpcm.webp'
 								tooptip='MongoDB'
 							/>
 							<LanguageIcon

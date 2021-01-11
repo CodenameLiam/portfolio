@@ -53,7 +53,7 @@ export const NewsReader = () => {
 										tooptip='React JS / React Native'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Node_oonmq9.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Node_oonmq9.webp'
 										tooptip='Node JS / Express'
 									/>
 									<LanguageIcon
@@ -61,7 +61,7 @@ export const NewsReader = () => {
 										tooptip='Google Cloud Text-To-Speech'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Docker_ema1xe.webp'
 										tooptip='Docker'
 									/>
 									<LanguageIcon
@@ -89,19 +89,19 @@ export const NewsReader = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Landing Page'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/Home_gh0x2j.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372937/Home_gh0x2j.webp'
 							/>
 							<ProjectImage
 								legend='News Article Speech Playback'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Playback_x6okju.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Playback_x6okju.webp'
 							/>
 							<ProjectImage
 								legend='Explore Article'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Explore_r3fejg.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Explore_r3fejg.webp'
 							/>
 							<ProjectImage
 								legend='Select Voice'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/SelectVoice_qfxghu.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372937/SelectVoice_qfxghu.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>

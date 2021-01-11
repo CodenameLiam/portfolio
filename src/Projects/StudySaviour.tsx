@@ -83,15 +83,15 @@ export const StudySaviour = () => {
 										tooptip='React JS'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Node_oonmq9.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Node_oonmq9.webp'
 										tooptip='Node JS / Express'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Firebase_wnhx7u.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Firebase_wnhx7u.webp'
 										tooptip='Firebase Auth / Firestore'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372946/Redis_birwsp.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372946/Redis_birwsp.webp'
 										tooptip='Redis'
 									/>
 									<LanguageIcon

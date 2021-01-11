@@ -29,19 +29,19 @@ export const Medical = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Decision Tree Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/DT_v9aasw.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/DT_v9aasw.webp'
 							/>
 							<ProjectImage
 								legend='Nearest Neighbour Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/NN_zjkdhg.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/NN_zjkdhg.webp'
 							/>
 							<ProjectImage
 								legend='Support Vector Machine Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/SVM_tn9m78.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/SVM_tn9m78.webp'
 							/>
 							<ProjectImage
 								legend='Neural Network Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/NuN_d8q72s.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/NuN_d8q72s.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>
@@ -83,7 +83,7 @@ export const Medical = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Python_jitmhh.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Python_jitmhh.webp'
 										tooptip='Python'
 									/>
 									<LanguageIcon

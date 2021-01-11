@@ -29,11 +29,11 @@ export const Dist = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Multi-Threading'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/MultiThreading_vnwgz9.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/MultiThreading_vnwgz9.webp'
 							/>
 							<ProjectImage
 								legend='Memory Management and Signalling'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/MemMng_fvwuby.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/MemMng_fvwuby.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>

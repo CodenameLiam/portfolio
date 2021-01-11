@@ -53,7 +53,7 @@ export const PathFinder = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372945/Python_jitmhh.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Python_jitmhh.webp'
 										tooptip='Python'
 									/>
 								</div>
@@ -77,11 +77,11 @@ export const PathFinder = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Sokoban Path Finder'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Game_eo3xpa.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_340/v1610372939/Game_eo3xpa.webp'
 							/>
 							<ProjectImage
 								legend='Algorithm Flow Diagram'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/FlowDiagram_j64rpy.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_340/v1610372939/FlowDiagram_j64rpy.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>

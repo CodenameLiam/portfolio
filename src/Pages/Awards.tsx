@@ -40,7 +40,7 @@ export const Award = (props: IAwardProps) => {
 const AwardContent: IAwardProps[] = [
 	{
 		image:
-			"https://res.cloudinary.com/djeukcxxb/image/upload/v1610372947/BestProject_o9iw4f.jpg",
+			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_320/v1610372947/BestProject_o9iw4f.webp",
 		title: "Best Overall Project",
 		subTitle: "UQCS 2020 Hackathon",
 		text: `Competed in the University of Queensland Computer 
@@ -51,7 +51,7 @@ const AwardContent: IAwardProps[] = [
 	},
 	{
 		image:
-			"https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/PeoplesChoice_yr26nv.jpg",
+			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_320/v1610372948/PeoplesChoice_yr26nv.webp",
 		title: "Peoples Choice Award",
 		subTitle: "UQCS 2020 Hackathon",
 		text: `Competed in the University of Queensland Computer 
@@ -60,7 +60,8 @@ const AwardContent: IAwardProps[] = [
 		delay: 200,
 	},
 	{
-		image: "https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/Deans_qrcfeh.png",
+		image:
+			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_320/v1610372948/Deans_qrcfeh.webp",
 		title: "Dean's Scholar",
 		subTitle: "QUT 2017-Present",
 		text: `Achieved a grade point average (GPA) of 6.5 or 

@@ -60,11 +60,11 @@ export const Parmalat = () => {
 										tooptip='ASP.NET'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/IIS_siqdgg.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372944/IIS_siqdgg.webp'
 										tooptip='Microsoft IIS / SQL Server'
 									/>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372942/Docker_ema1xe.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372942/Docker_ema1xe.webp'
 										tooptip='Docker'
 									/>
 								</div>
@@ -87,25 +87,28 @@ export const Parmalat = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Dashboard'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Dash_flz6m7.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Dash_flz6m7.webp'
 							/>
 							<ProjectImage
 								legend='News Homepage'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/News_vwibm8.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/News_vwibm8.webp'
 							/>
 							<ProjectImage
 								legend='News Article'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/NewsStory_doah0x.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/NewsStory_doah0x.webp'
 							/>
 							<ProjectImage
 								legend='Login'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Login_fflikb.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Login_fflikb.webp'
 							/>
 							<ProjectImage
 								legend='Documents'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Docs_xrweob.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Docs_xrweob.webp'
 							/>
-							<ProjectImage legend='Documents CMS' URL='Parmalat/DocsBackend.jpg' />
+							<ProjectImage
+								legend='Documents CMS'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372939/DocsBackend_d67h4t.webp'
+							/>
 						</Carousel>
 					</ScrollAnimation>
 				</div>

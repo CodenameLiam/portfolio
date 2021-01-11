@@ -27,12 +27,18 @@ export const Contact = () => {
 					<div
 						className='contact-button linkedin'
 						onClick={() => window.open("https://www.linkedin.com/in/liam-percy/")}>
-						<img src="https://res.cloudinary.com/djeukcxxb/image/upload/v1610372949/Linkedin_lvrjxi.png" alt="LinkedIn"/>
+						<img
+							src='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372949/Linkedin_lvrjxi.png'
+							alt='LinkedIn'
+						/>
 					</div>
 					<div
 						className='contact-button github'
 						onClick={() => window.open("https://github.com/CodenameLiam")}>
-						<img src="https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/Github_v0kpyz.png" alt="Github" />
+						<img
+							src='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372948/Github_v0kpyz.png'
+							alt='Github'
+						/>
 					</div>
 				</div>
 
@@ -42,7 +48,11 @@ export const Contact = () => {
 
 				<div className='contact-sparkles'>
 					<Sparkles>
-						<img className='me' src="https://res.cloudinary.com/djeukcxxb/image/upload/v1610372949/Me_rdag65.jpg" alt="Me!"/>
+						<img
+							className='me'
+							src='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_320/v1610372949/Me_rdag65.webp'
+							alt='Me!'
+						/>
 					</Sparkles>
 				</div>
 			</ScrollAnimation>

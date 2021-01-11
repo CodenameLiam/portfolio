@@ -28,11 +28,11 @@ export const GeneSequence = () => {
 							transitionTime={800}>
 							<ProjectImage
 								legend='Speedup Graph (Sequential vs Non-Seqential)'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/Speedup_abnwvy.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/Speedup_abnwvy.webp'
 							/>
 							<ProjectImage
 								legend='Output'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372936/Output_htppdy.png'
+								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/Output_htppdy.webp'
 							/>
 						</Carousel>
 					</ScrollAnimation>
@@ -71,7 +71,7 @@ export const GeneSequence = () => {
 							<div className='project-stack'>
 								<div className='stack-images'>
 									<LanguageIcon
-										url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372944/Java_mhw6z4.png'
+										url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372944/Java_mhw6z4.webp'
 										tooptip='Java / Java Executor Framework'
 									/>
 								</div>
