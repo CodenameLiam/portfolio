@@ -48,11 +48,14 @@ export const Skills = () => {
 							<LanguageIcon url='TS.png' tooptip='TypeScript' />
 							<LanguageIcon url='Python.png' tooptip='Python' />
 							<LanguageIcon url='C.svg' tooptip='C' />
+							<LanguageIcon url='CPP.svg' tooptip='C++' />
 							<LanguageIcon url='CSharp.svg' tooptip='C#' />
-							<LanguageIcon url='Java.png' tooptip='Java' />
 							<LanguageIcon url='HTML.svg' tooptip='HTML' />
 							<LanguageIcon url='CSS.svg' tooptip='CSS' />
 							<LanguageIcon url='Sass.svg' tooptip='SASS' />
+							<LanguageIcon url='Java.png' tooptip='Java' />
+							<LanguageIcon url='Go.svg' tooptip='Go' />
+							
 						</div>
 					</div>
 				</ScrollAnimation>
@@ -85,17 +88,20 @@ export const Skills = () => {
 						<div className='icon-group tool-group'>
 							<LanguageIcon url='React.svg' tooptip='React JS / React Native' />
 							<LanguageIcon url='GraphQL.svg' tooptip='GraphQL' />
-							{/* <LanguageIcon url="Storybook.png" tooptip="Storybook JS" /> */}
+							<LanguageIcon url="Storybook.png" tooptip="Storybook JS" />
 							<LanguageIcon url='Docker.png' tooptip='Docker' />
 							<LanguageIcon url='Postgres.png' tooptip='PostgreSQL' />
-							<LanguageIcon url='Git.png' tooptip='Git' />
-							<LanguageIcon url='Redis.png' tooptip='Redis' />
+							<LanguageIcon url='GoogCloud.svg' tooptip='Google Cloud Platform / Services' />
 							<LanguageIcon url='NET.svg' tooptip='ASP.NET' />
 							<LanguageIcon url='AWS.svg' tooptip='Amazon Web Services' />
-							<LanguageIcon url='Node.png' tooptip='Node JS / Express' />
-							<LanguageIcon url='MongoDB.png' tooptip='MongoDB' />
+							<LanguageIcon url='Redis.png' tooptip='Redis' />
+							<LanguageIcon url='Git.png' tooptip='Git' />
 							<LanguageIcon url='Firebase.png' tooptip='Firebase' />
 							<LanguageIcon url='Tensor.svg' tooptip='TensorFlow' />
+							<LanguageIcon url='Node.png' tooptip='NodeJS / Express' />
+							<LanguageIcon url='MongoDB.png' tooptip='MongoDB' />
+							<LanguageIcon url='Gatsby.svg' tooptip='Gatsby' />
+							<LanguageIcon url='Next.svg' tooptip='NextJS' />
 						</div>
 					</div>
 				</ScrollAnimation>

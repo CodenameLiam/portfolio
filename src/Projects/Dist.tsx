@@ -27,10 +27,10 @@ export const Dist = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Multi-Threading' URL='Dist/MultiThreading.png' />
+							<ProjectImage legend='Multi-Threading' URL='Dist/MultiThreading.jpg' />
 							<ProjectImage
 								legend='Memory Management and Signalling'
-								URL='Dist/MemMng.png'
+								URL='Dist/MemMng.jpg'
 							/>
 						</Carousel>
 					</ScrollAnimation>

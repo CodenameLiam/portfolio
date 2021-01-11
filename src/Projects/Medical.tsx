@@ -29,10 +29,10 @@ export const Medical = () => {
                             interval={5000}
                             transitionTime={800}
                         >
-                            <ProjectImage legend="Decision Tree Classifier" URL="Med/DT.png" />
-                            <ProjectImage legend="Nearest Neighbour Classifier" URL="Med/NN.png" />
-                            <ProjectImage legend="Support Vector Machine Classifier" URL="Med/SVM.png" />
-                            <ProjectImage legend="Neural Network Classifier" URL="Med/NuN.png" />
+                            <ProjectImage legend="Decision Tree Classifier" URL="Med/DT.jpg" />
+                            <ProjectImage legend="Nearest Neighbour Classifier" URL="Med/NN.jpg" />
+                            <ProjectImage legend="Support Vector Machine Classifier" URL="Med/SVM.jpg" />
+                            <ProjectImage legend="Neural Network Classifier" URL="Med/NuN.jpg" />
                         </Carousel>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeInRight" animateOnce className="project-text-container">

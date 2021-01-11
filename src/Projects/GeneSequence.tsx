@@ -30,7 +30,7 @@ export const GeneSequence = () => {
 								legend='Speedup Graph (Sequential vs Non-Seqential)'
 								URL='Gene/Speedup.png'
 							/>
-							<ProjectImage legend='Output' URL='Gene/Output.png' />
+							<ProjectImage legend='Output' URL='Gene/Output.jpg' />
 						</Carousel>
 					</ScrollAnimation>
 					<ScrollAnimation

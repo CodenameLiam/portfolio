@@ -11,6 +11,7 @@ export const YHP = () => {
 
 	return (
 		<div className='yhp'>
+			<img className="tree" src={process.env.PUBLIC_URL + "/Projects/YHP/Tree.png"} alt="tree"/>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
 					<ScrollAnimation
@@ -26,12 +27,12 @@ export const YHP = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Clinician Dashboard' URL='YHP/Dash.png' />
-							<ProjectImage legend='Goals' URL='YHP/Goals.png' />
-							<ProjectImage legend='Library' URL='YHP/Search.png' />
-							<ProjectImage legend='Tracker' URL='YHP/PatientTracking.png' />
-							<ProjectImage legend='Patient Profile' URL='YHP/ProfileWeb.png' />
-							<ProjectImage legend='Mobile Application' URL='YHP/Mobile.png' />
+							<ProjectImage legend='Clinician Dashboard' URL='YHP/Dash.jpg' />
+							<ProjectImage legend='Goals' URL='YHP/Goals.jpg' />
+							<ProjectImage legend='Library' URL='YHP/Search.jpg' />
+							<ProjectImage legend='Tracker' URL='YHP/PatientTracking.jpg' />
+							<ProjectImage legend='Patient Profile' URL='YHP/ProfileWeb.jpg' />
+							<ProjectImage legend='Mobile Application' URL='YHP/Mobile.jpg' />
 						</Carousel>
 					</ScrollAnimation>
 

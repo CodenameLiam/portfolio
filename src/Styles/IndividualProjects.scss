@@ -58,6 +58,7 @@
 .yhp {
 	background: #d9effc;
 	overflow: hidden;
+	position: relative;
 
 	.section-sub-title,
 	.project-text-left {
@@ -71,6 +72,18 @@
 	.dot {
 		background: #6395b4 !important;
 	}
+
+	.tree{
+		position: absolute;
+		right: 0;
+		bottom: -5px;
+		height: 12rem;
+
+		@media screen and (max-width: 1200px) {
+			right: -3rem;
+		}
+	}
+
 }
 
 .news-break {

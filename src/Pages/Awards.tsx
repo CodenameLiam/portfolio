@@ -62,7 +62,7 @@ const AwardContent: IAwardProps[] = [
 		delay: 200,
 	},
 	{
-		image: "Deans.png",
+		image: "Deans.jpg",
 		title: "Dean's Scholar",
 		subTitle: "QUT 2017-Present",
 		text: `Achieved a grade point average (GPA) of 6.5 or 

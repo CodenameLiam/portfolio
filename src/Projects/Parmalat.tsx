@@ -76,12 +76,12 @@ export const Parmalat = () => {
 							infiniteLoop={true}
 							interval={5000}
 							transitionTime={800}>
-							<ProjectImage legend='Dashboard' URL='Parmalat/Dash.png' />
-							<ProjectImage legend='News Homepage' URL='Parmalat/News.png' />
-							<ProjectImage legend='News Article' URL='Parmalat/NewsStory.png' />
-							<ProjectImage legend='Login' URL='Parmalat/Login.png' />
-							<ProjectImage legend='Documents' URL='Parmalat/Docs.png' />
-							<ProjectImage legend='Documents CMS' URL='Parmalat/DocsBackend.png' />
+							<ProjectImage legend='Dashboard' URL='Parmalat/Dash.jpg' />
+							<ProjectImage legend='News Homepage' URL='Parmalat/News.jpg' />
+							<ProjectImage legend='News Article' URL='Parmalat/NewsStory.jpg' />
+							<ProjectImage legend='Login' URL='Parmalat/Login.jpg' />
+							<ProjectImage legend='Documents' URL='Parmalat/Docs.jpg' />
+							<ProjectImage legend='Documents CMS' URL='Parmalat/DocsBackend.jpg' />
 						</Carousel>
 					</ScrollAnimation>
 				</div>
