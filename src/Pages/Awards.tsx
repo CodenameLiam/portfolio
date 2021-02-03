@@ -1,5 +1,5 @@
-import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export const Awards = () => {
 	return (
@@ -40,9 +40,9 @@ export const Award = (props: IAwardProps) => {
 const AwardContent: IAwardProps[] = [
 	{
 		image:
-			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_320/v1610372947/BestProject_o9iw4f.webp",
-		title: "Best Overall Project",
-		subTitle: "UQCS 2020 Hackathon",
+			'https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_500/v1610372947/BestProject_o9iw4f.webp',
+		title: 'Best Overall Project',
+		subTitle: 'UQCS 2020 Hackathon',
 		text: `Competed in the University of Queensland Computer 
 		Society's 2020 Hackathon and was awarded the best overall 
 		project for our teams work on a social note sharing platform 
@@ -51,9 +51,9 @@ const AwardContent: IAwardProps[] = [
 	},
 	{
 		image:
-			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_320/v1610372948/PeoplesChoice_yr26nv.webp",
-		title: "Peoples Choice Award",
-		subTitle: "UQCS 2020 Hackathon",
+			'https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_500/v1610372948/PeoplesChoice_yr26nv.webp',
+		title: 'Peoples Choice Award',
+		subTitle: 'UQCS 2020 Hackathon',
 		text: `Competed in the University of Queensland Computer 
 		Society's 2020 Hackathon and was awarded the with the peoples choice award 
 		as voted for by our competitors, for our project during the event`,
@@ -61,9 +61,9 @@ const AwardContent: IAwardProps[] = [
 	},
 	{
 		image:
-			"https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_320/v1610372948/Deans_qrcfeh.webp",
+			'https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_500/v1610372948/Deans_qrcfeh.webp',
 		title: "Dean's Scholar",
-		subTitle: "QUT 2017-Present",
+		subTitle: 'QUT 2017-Present',
 		text: `Achieved a grade point average (GPA) of 6.5 or 
 		higher during various semesters across my time at QUT, and was awarded 
 		with a place on the Dean's List of Students with Excellent Academic Performance `,

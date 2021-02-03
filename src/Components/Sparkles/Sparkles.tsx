@@ -29,7 +29,7 @@ export const Sparkles = (props: ISparkleProps) => {
 	);
 
 	return (
-		<div className="sparkle-container">
+		<div className='sparkle-container'>
 			{sparkles.map((sparkle) => (
 				<SparkleInstance
 					key={sparkle.id}
@@ -38,7 +38,7 @@ export const Sparkles = (props: ISparkleProps) => {
 					left={sparkle.left}
 				/>
 			))}
-			<div className="sparkle-children">{props.children}</div>
+			<div className='sparkle-children'>{props.children}</div>
 		</div>
 	);
 };

@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ReactComponent as Hamburger } from "./../Media/Icons/Hamburger.svg";
-import { ScrollContext } from "./Home";
+import React, { useContext, useEffect, useState } from 'react';
+import { Twirl as Hamburger } from 'hamburger-react';
+import { ScrollContext } from './Home';
 
 interface INavBarProps {
 	activeHeader: string;
@@ -42,17 +42,17 @@ export const NavigationBar = (props: INavBarProps) => {
 
 	useEffect(() => {
 		checkDisplayNavigation();
-		window.addEventListener("scroll", checkDisplayNavigation);
+		window.addEventListener('scroll', checkDisplayNavigation);
 		return () => {
-			window.removeEventListener("scroll", checkDisplayNavigation);
+			window.removeEventListener('scroll', checkDisplayNavigation);
 		};
 	}, []);
 
 	useEffect(() => {
 		checkDisplayMobile();
-		window.addEventListener("resize", checkDisplayMobile);
+		window.addEventListener('resize', checkDisplayMobile);
 		return () => {
-			window.removeEventListener("resize", checkDisplayMobile);
+			window.removeEventListener('resize', checkDisplayMobile);
 		};
 	}, []);
 
@@ -68,8 +68,8 @@ export const NavigationBar = (props: INavBarProps) => {
 				<div className='navigation-blocker' />
 				<div
 					className={`navigation-item ${
-						navigationMobile ? "navigation-item-first" : ""
-					} ${props.activeHeader === "home" ? "navigation-item-active" : ""}`}
+						navigationMobile ? 'navigation-item-first' : ''
+					} ${props.activeHeader === 'home' ? 'navigation-item-active' : ''}`}
 					onClick={() => {
 						window.scrollTo(0, 0);
 						setNavigationMobileOpen(false);
@@ -78,7 +78,7 @@ export const NavigationBar = (props: INavBarProps) => {
 				</div>
 				<div
 					className={`navigation-item  ${
-						props.activeHeader === "about" ? "navigation-item-active" : ""
+						props.activeHeader === 'about' ? 'navigation-item-active' : ''
 					}`}
 					onClick={() => {
 						setNavigationMobileOpen(false);
@@ -88,7 +88,7 @@ export const NavigationBar = (props: INavBarProps) => {
 				</div>
 				<div
 					className={`navigation-item  ${
-						props.activeHeader === "skills" ? "navigation-item-active" : ""
+						props.activeHeader === 'skills' ? 'navigation-item-active' : ''
 					}`}
 					onClick={() => {
 						setNavigationMobileOpen(false);
@@ -98,7 +98,7 @@ export const NavigationBar = (props: INavBarProps) => {
 				</div>
 				<div
 					className={`navigation-item  ${
-						props.activeHeader === "projects" ? "navigation-item-active" : ""
+						props.activeHeader === 'projects' ? 'navigation-item-active' : ''
 					}`}
 					onClick={() => {
 						setNavigationMobileOpen(false);
@@ -108,7 +108,7 @@ export const NavigationBar = (props: INavBarProps) => {
 				</div>
 				<div
 					className={`navigation-item  ${
-						props.activeHeader === "awards" ? "navigation-item-active" : ""
+						props.activeHeader === 'awards' ? 'navigation-item-active' : ''
 					}`}
 					onClick={() => {
 						setNavigationMobileOpen(false);
@@ -118,7 +118,7 @@ export const NavigationBar = (props: INavBarProps) => {
 				</div>
 				<div
 					className={`navigation-item  ${
-						props.activeHeader === "cultural" ? "navigation-item-active" : ""
+						props.activeHeader === 'cultural' ? 'navigation-item-active' : ''
 					}`}
 					onClick={() => {
 						setNavigationMobileOpen(false);
@@ -128,7 +128,7 @@ export const NavigationBar = (props: INavBarProps) => {
 				</div>
 				<div
 					className={`navigation-item  ${
-						props.activeHeader === "contact" ? "navigation-item-active" : ""
+						props.activeHeader === 'contact' ? 'navigation-item-active' : ''
 					}`}
 					onClick={() => {
 						setNavigationMobileOpen(false);
@@ -136,10 +136,16 @@ export const NavigationBar = (props: INavBarProps) => {
 					}}>
 					Contact
 				</div>
-				<Hamburger
+				<div
 					className='hamburger'
-					onClick={() => setNavigationMobileOpen(!navigationMobileOpen)}
-				/>
+					onClick={() => setNavigationMobileOpen(!navigationMobileOpen)}>
+					<Hamburger
+						toggled={navigationMobileOpen}
+						rounded={true}
+						color='#fde6e6'
+						size={30}
+					/>
+				</div>
 			</div>
 		</div>
 	);
