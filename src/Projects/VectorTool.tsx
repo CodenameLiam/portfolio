@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Carousel } from "react-responsive-carousel";
-import Popup from "reactjs-popup";
-import { ProjectImage } from "../Components/ProjectImage";
-import { LanguageIcon } from "../Pages/Skills";
-import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
+import React, { useState } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Carousel } from 'react-responsive-carousel';
+import Popup from 'reactjs-popup';
+import { ProjectImage } from '../Components/ProjectImage';
+import { ProjectLinks } from '../Components/ProjectLinks';
+import { LanguageIcon } from '../Pages/Skills';
+import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 
 export const VectorTool = () => {
 	const [animateCarousel, setAnimateCarousel] = useState(false);
@@ -21,16 +22,19 @@ export const VectorTool = () => {
 							Vector Graphics Tool
 							<Popup
 								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
+									background: '#1c1e26',
+									color: '#ffffff',
+									border: 'none',
+									textAlign: 'center',
+									marginTop: '0.5rem',
 								}}
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Coming Soon</div>
+								<ProjectLinks
+									git='https://github.com/alex-j-butler/cab302-vector-design-tool'
+									pdf={process.env.PUBLIC_URL + '/Media/VectorDesignTool.pdf'}
+								/>
 							</Popup>
 						</div>
 						<div className='project-text-right'>

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Carousel } from "react-responsive-carousel";
-import Popup from "reactjs-popup";
-import { ProjectImage } from "../Components/ProjectImage";
-import { LanguageIcon } from "../Pages/Skills";
-import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
+import React, { useState } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Carousel } from 'react-responsive-carousel';
+import Popup from 'reactjs-popup';
+import { ProjectImage } from '../Components/ProjectImage';
+import { ProjectLinks } from '../Components/ProjectLinks';
+import { LanguageIcon } from '../Pages/Skills';
+import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 
 export const YHP = () => {
 	const [animateCarousel, setAnimateCarousel] = useState(false);
@@ -66,16 +67,16 @@ export const YHP = () => {
 							YourHealth+
 							<Popup
 								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
+									background: '#1c1e26',
+									color: '#ffffff',
+									border: 'none',
+									textAlign: 'center',
+									marginTop: '0.5rem',
 								}}
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Coming Soon</div>
+								<ProjectLinks video='https://www.youtube.com/watch?v=-o5f6lThm0I' />
 							</Popup>
 						</div>
 						<div className='project-text-left'>

@@ -3,6 +3,7 @@ import React from 'react';
 interface ILinksProps {
 	pdf?: string;
 	git?: string;
+    video?: string;
 }
 
 export const ProjectLinks = (props: ILinksProps) => {
@@ -22,9 +23,17 @@ export const ProjectLinks = (props: ILinksProps) => {
 					link={props.pdf}
 				/>
 			)}
+            {props.video && (
+				<ProjectLink
+					image='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_300/v1612860762/Video_fcngmr.webp'
+					description='Video'
+					link={props.video}
+				/>
+			)}
 		</div>
 	);
 };
+
 interface ILinkProps {
 	image: string;
 	description: string;

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import Popup from "reactjs-popup";
-import { LanguageIcon } from "../Pages/Skills";
-import { Carousel } from "react-responsive-carousel";
-import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
-import { ProjectImage } from "../Components/ProjectImage";
+import React, { useState } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import Popup from 'reactjs-popup';
+import { LanguageIcon } from '../Pages/Skills';
+import { Carousel } from 'react-responsive-carousel';
+import { ReactComponent as Link } from './../Media/Icons/Link.svg';
+import { ProjectImage } from '../Components/ProjectImage';
+import { ProjectLinks } from '../Components/ProjectLinks';
 
 export const GeneSequence = () => {
 	const [animateCarousel, setAnimateCarousel] = useState(false);
@@ -44,16 +45,19 @@ export const GeneSequence = () => {
 							Gene Sequencing Application
 							<Popup
 								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
+									background: '#1c1e26',
+									color: '#ffffff',
+									border: 'none',
+									textAlign: 'center',
+									marginTop: '0.5rem',
 								}}
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<div>Coming Soon</div>
+								<ProjectLinks
+									git='https://github.com/CodenameLiam/consensus-promoter'
+									pdf={process.env.PUBLIC_URL + '/Media/GeneSequencing.pdf'}
+								/>
 							</Popup>
 						</div>
 						<div className='project-text-left'>
