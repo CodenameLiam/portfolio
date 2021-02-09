@@ -1,10 +1,10 @@
-import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Sparkles } from "../Components/Sparkles/Sparkles";
-import { ReactComponent as Circle } from "./../Media/Graphics/Circle1.svg";
-import { ReactComponent as Cloud1 } from "./../Media/Graphics/Cloud1.svg";
-import { ReactComponent as Cloud2 } from "./../Media/Graphics/Cloud2.svg";
-import { ReactComponent as Mail } from "./../Media/Graphics/Mail.svg";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Sparkles } from '../Components/Sparkles/Sparkles';
+import { ReactComponent as Circle } from './../Media/Graphics/Circle1.svg';
+import { ReactComponent as Cloud1 } from './../Media/Graphics/Cloud1.svg';
+import { ReactComponent as Cloud2 } from './../Media/Graphics/Cloud2.svg';
+import { ReactComponent as Mail } from './../Media/Graphics/Mail.svg';
 
 export const Landing = () => {
 	return (
@@ -18,7 +18,9 @@ export const Landing = () => {
 					<ScrollAnimation animateIn='fadeIn' delay={500}>
 						<p className='name-description'>
 							My name spelt backwards is
-							<Mail className='mail-icon' />
+							<a target='_top' href='mailto:liampercy123@gmail.com'>
+								<Mail className='mail-icon' />
+							</a>
 						</p>
 					</ScrollAnimation>
 				</div>
