@@ -31,7 +31,7 @@ export const Parmalat = () => {
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
-								<ProjectLinks video='https://youtu.be/cf_qHIKrBAo' />
+								<ProjectLinks video='https://youtu.be/JIrcGJp-XDg' />
 							</Popup>
 						</div>
 						<div className='project-text-right'>
