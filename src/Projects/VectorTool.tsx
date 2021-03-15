@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Carousel } from 'react-responsive-carousel';
 import Popup from 'reactjs-popup';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 import { ProjectImage } from '../Components/ProjectImage';
 import { ProjectLinks } from '../Components/ProjectLinks';
 import { LanguageIcon } from '../Pages/Skills';
 import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 
 export const VectorTool = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='vector-tool'>
 			<div className='section-container'>
@@ -61,33 +59,20 @@ export const VectorTool = () => {
 						</div>
 					</ScrollAnimation>
 
-					<ScrollAnimation
-						animateIn='fadeInRight'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`vector${animateCarousel.toString()}`}
-							autoPlay={animateCarousel}
-							showThumbs={false}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Shape Tools'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Shapes_k49hak.webp'
-							/>
-							<ProjectImage
-								legend='Transparent Shapes'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Transparent_gs8qte.webp'
-							/>
-							<ProjectImage
-								legend='Colour Picker'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Color_ehlnwo.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='vector' fade='fadeInRight'>
+						<ProjectImage
+							legend='Shape Tools'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Shapes_k49hak.webp'
+						/>
+						<ProjectImage
+							legend='Transparent Shapes'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Transparent_gs8qte.webp'
+						/>
+						<ProjectImage
+							legend='Colour Picker'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372940/Color_ehlnwo.webp'
+						/>
+					</AnimatedCarousel>
 				</div>
 			</div>
 		</div>

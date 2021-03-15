@@ -1,50 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Popup from 'reactjs-popup';
 import { LanguageIcon } from '../Pages/Skills';
-import { Carousel } from 'react-responsive-carousel';
 import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 import { ProjectImage } from '../Components/ProjectImage';
 import { ProjectLinks } from '../Components/ProjectLinks';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 
 export const StudySaviour = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='study-saviour'>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
-					<ScrollAnimation
-						animateIn='fadeInLeft'
-						animateOnce
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}
-						className='project-image-container'>
-						<Carousel
-							key={`study${animateCarousel.toString()}`}
-							autoPlay={animateCarousel}
-							showThumbs={false}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Dashboard'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Dashboard_wfwsen.png'
-							/>
-							<ProjectImage
-								legend='Upload Notes'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Upload_l3smtr.png'
-							/>
-							<ProjectImage
-								legend='Liked Notes'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/LikedNotes_d0ah20.png'
-							/>
-							<ProjectImage
-								legend='Login'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Login_thjcue.png'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='study' fade='fadeInLeft'>
+						<ProjectImage
+							legend='Dashboard'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Dashboard_wfwsen.png'
+						/>
+						<ProjectImage
+							legend='Upload Notes'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372940/Upload_l3smtr.png'
+						/>
+						<ProjectImage
+							legend='Liked Notes'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/LikedNotes_d0ah20.png'
+						/>
+						<ProjectImage
+							legend='Login'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Login_thjcue.png'
+						/>
+					</AnimatedCarousel>
+
 					<ScrollAnimation
 						animateIn='fadeInRight'
 						animateOnce

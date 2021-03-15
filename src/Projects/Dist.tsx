@@ -1,42 +1,28 @@
-import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import Popup from "reactjs-popup";
-import { LanguageIcon } from "../Pages/Skills";
-import { Carousel } from "react-responsive-carousel";
-import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
-import { ProjectLinks } from "../Components/ProjectLinks";
-import { ProjectImage } from "../Components/ProjectImage";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import Popup from 'reactjs-popup';
+import { LanguageIcon } from '../Pages/Skills';
+import { ReactComponent as Link } from './../Media/Icons/Link.svg';
+import { ProjectLinks } from '../Components/ProjectLinks';
+import { ProjectImage } from '../Components/ProjectImage';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 
 export const Dist = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='dist'>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
-					<ScrollAnimation
-						animateIn='fadeInLeft'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`dist${animateCarousel.toString()}`}
-							showThumbs={false}
-							autoPlay={animateCarousel}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Multi-Threading'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/MultiThreading_vnwgz9.webp'
-							/>
-							<ProjectImage
-								legend='Memory Management and Signalling'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/MemMng_fvwuby.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='dist' fade='fadeInLeft'>
+						<ProjectImage
+							legend='Multi-Threading'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/MultiThreading_vnwgz9.webp'
+						/>
+						<ProjectImage
+							legend='Memory Management and Signalling'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/MemMng_fvwuby.webp'
+						/>
+					</AnimatedCarousel>
+
 					<ScrollAnimation
 						animateIn='fadeInRight'
 						animateOnce
@@ -45,11 +31,11 @@ export const Dist = () => {
 							Distributed System
 							<Popup
 								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
+									background: '#1c1e26',
+									color: '#ffffff',
+									border: 'none',
+									textAlign: 'center',
+									marginTop: '0.5rem',
 								}}
 								arrow={false}
 								position='bottom center'

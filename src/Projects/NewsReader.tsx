@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Carousel } from 'react-responsive-carousel';
 import Popup from 'reactjs-popup';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 import { ProjectImage } from '../Components/ProjectImage';
 import { ProjectLinks } from '../Components/ProjectLinks';
 import { LanguageIcon } from '../Pages/Skills';
 import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 
 export const NewsReader = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='news-reader'>
 			<div className='section-container'>
@@ -79,37 +77,24 @@ export const NewsReader = () => {
 						</div>
 					</ScrollAnimation>
 
-					<ScrollAnimation
-						animateIn='fadeInRight'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`news${animateCarousel.toString()}`}
-							autoPlay={animateCarousel}
-							showThumbs={false}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Landing Page'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/Home_gh0x2j.webp'
-							/>
-							<ProjectImage
-								legend='News Article Speech Playback'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Playback_x6okju.webp'
-							/>
-							<ProjectImage
-								legend='Explore Article'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610379271/Explore_knbmiz.webp'
-							/>
-							<ProjectImage
-								legend='Select Voice'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/SelectVoice_qfxghu.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='news' fade='fadeInRight'>
+						<ProjectImage
+							legend='Landing Page'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/Home_gh0x2j.webp'
+						/>
+						<ProjectImage
+							legend='News Article Speech Playback'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372938/Playback_x6okju.webp'
+						/>
+						<ProjectImage
+							legend='Explore Article'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610379271/Explore_knbmiz.webp'
+						/>
+						<ProjectImage
+							legend='Select Voice'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372937/SelectVoice_qfxghu.webp'
+						/>
+					</AnimatedCarousel>
 				</div>
 			</div>
 		</div>

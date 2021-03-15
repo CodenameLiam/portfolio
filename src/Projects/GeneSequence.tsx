@@ -1,42 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Popup from 'reactjs-popup';
 import { LanguageIcon } from '../Pages/Skills';
-import { Carousel } from 'react-responsive-carousel';
 import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 import { ProjectImage } from '../Components/ProjectImage';
 import { ProjectLinks } from '../Components/ProjectLinks';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 
 export const GeneSequence = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='gene-seq'>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
-					<ScrollAnimation
-						animateIn='fadeInLeft'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`gene${animateCarousel.toString()}`}
-							autoPlay={animateCarousel}
-							showThumbs={false}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Speedup Graph (Sequential vs Non-Seqential)'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/Speedup_abnwvy.webp'
-							/>
-							<ProjectImage
-								legend='Output'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/Output_htppdy.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='gene' fade='fadeInLeft'>
+						<ProjectImage
+							legend='Speedup Graph (Sequential vs Non-Seqential)'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/Speedup_abnwvy.webp'
+						/>
+						<ProjectImage
+							legend='Output'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372936/Output_htppdy.webp'
+						/>
+					</AnimatedCarousel>
+
 					<ScrollAnimation
 						animateIn='fadeInRight'
 						animateOnce

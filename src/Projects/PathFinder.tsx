@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Carousel } from "react-responsive-carousel";
-import Popup from "reactjs-popup";
-import { ProjectImage } from "../Components/ProjectImage";
-import { ProjectLinks } from "../Components/ProjectLinks";
-import { LanguageIcon } from "../Pages/Skills";
-import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import Popup from 'reactjs-popup';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
+import { ProjectImage } from '../Components/ProjectImage';
+import { ProjectLinks } from '../Components/ProjectLinks';
+import { LanguageIcon } from '../Pages/Skills';
+import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 
 export const PathFinder = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='path-finder'>
 			<div className='section-container'>
@@ -22,18 +20,18 @@ export const PathFinder = () => {
 							Machine Learning Path Finder
 							<Popup
 								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
+									background: '#1c1e26',
+									color: '#ffffff',
+									border: 'none',
+									textAlign: 'center',
+									marginTop: '0.5rem',
 								}}
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
 								<ProjectLinks
 									git='https://github.com/CodenameLiam/sokoban-path-finder'
-									pdf={process.env.PUBLIC_URL + "/Media/PathFinding.pdf"}
+									pdf={process.env.PUBLIC_URL + '/Media/PathFinding.pdf'}
 								/>
 							</Popup>
 						</div>
@@ -62,29 +60,16 @@ export const PathFinder = () => {
 						</div>
 					</ScrollAnimation>
 
-					<ScrollAnimation
-						animateIn='fadeInRight'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`path${animateCarousel.toString()}`}
-							showThumbs={false}
-							autoPlay={animateCarousel}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Sokoban Path Finder'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_340/v1610372939/Game_eo3xpa.webp'
-							/>
-							<ProjectImage
-								legend='Algorithm Flow Diagram'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_340/v1610372939/FlowDiagram_j64rpy.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='path' fade='fadeInRight'>
+						<ProjectImage
+							legend='Sokoban Path Finder'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_340/v1610372939/Game_eo3xpa.webp'
+						/>
+						<ProjectImage
+							legend='Algorithm Flow Diagram'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_340/v1610372939/FlowDiagram_j64rpy.webp'
+						/>
+					</AnimatedCarousel>
 				</div>
 			</div>
 		</div>

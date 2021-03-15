@@ -1,50 +1,36 @@
-import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import Popup from "reactjs-popup";
-import { LanguageIcon } from "../Pages/Skills";
-import { Carousel } from "react-responsive-carousel";
-import { ReactComponent as Link } from "./../Media/Icons/Link.svg";
-import { ProjectImage } from "../Components/ProjectImage";
-import { ProjectLinks } from "../Components/ProjectLinks";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import Popup from 'reactjs-popup';
+import { LanguageIcon } from '../Pages/Skills';
+import { ReactComponent as Link } from './../Media/Icons/Link.svg';
+import { ProjectImage } from '../Components/ProjectImage';
+import { ProjectLinks } from '../Components/ProjectLinks';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 
 export const Medical = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='medical'>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
-					<ScrollAnimation
-						animateIn='fadeInLeft'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`medical${animateCarousel.toString()}`}
-							showThumbs={false}
-							autoPlay={animateCarousel}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Decision Tree Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/DT_v9aasw.webp'
-							/>
-							<ProjectImage
-								legend='Nearest Neighbour Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/NN_zjkdhg.webp'
-							/>
-							<ProjectImage
-								legend='Support Vector Machine Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/SVM_tn9m78.webp'
-							/>
-							<ProjectImage
-								legend='Neural Network Classifier'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/NuN_d8q72s.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='medical' fade='fadeInLeft'>
+						<ProjectImage
+							legend='Decision Tree Classifier'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/DT_v9aasw.webp'
+						/>
+						<ProjectImage
+							legend='Nearest Neighbour Classifier'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/NN_zjkdhg.webp'
+						/>
+						<ProjectImage
+							legend='Support Vector Machine Classifier'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/SVM_tn9m78.webp'
+						/>
+						<ProjectImage
+							legend='Neural Network Classifier'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_300/v1610372937/NuN_d8q72s.webp'
+						/>
+					</AnimatedCarousel>
+
 					<ScrollAnimation
 						animateIn='fadeInRight'
 						animateOnce
@@ -53,18 +39,18 @@ export const Medical = () => {
 							Machine Learning Diagnosis
 							<Popup
 								contentStyle={{
-									background: "#1c1e26",
-									color: "#ffffff",
-									border: "none",
-									textAlign: "center",
-									marginTop: "0.5rem",
+									background: '#1c1e26',
+									color: '#ffffff',
+									border: 'none',
+									textAlign: 'center',
+									marginTop: '0.5rem',
 								}}
 								arrow={false}
 								position='bottom center'
 								trigger={<Link className='project-link-icon' />}>
 								<ProjectLinks
 									git='https://github.com/CodenameLiam/medical-diag-machine-learning'
-									pdf={process.env.PUBLIC_URL + "/Media/Medical.pdf"}
+									pdf={process.env.PUBLIC_URL + '/Media/Medical.pdf'}
 								/>
 							</Popup>
 						</div>

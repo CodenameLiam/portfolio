@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Carousel } from 'react-responsive-carousel';
 import Popup from 'reactjs-popup';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 import { ProjectImage } from '../Components/ProjectImage';
 import { ProjectLinks } from '../Components/ProjectLinks';
 import { LanguageIcon } from '../Pages/Skills';
 import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 
 export const YHP = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='yhp'>
 			<img
@@ -19,45 +17,32 @@ export const YHP = () => {
 			/>
 			<div className='section-container'>
 				<div className='project-container project-container-left'>
-					<ScrollAnimation
-						animateIn='fadeInLeft'
-						animateOnce
-						className='project-image-container'
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}>
-						<Carousel
-							key={`yhp${animateCarousel.toString()}`}
-							autoPlay={animateCarousel}
-							showThumbs={false}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Clinician Dashboard'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372940/Dash_ly9crd.webp'
-							/>
-							<ProjectImage
-								legend='Goals'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Goals_cpokxc.webp'
-							/>
-							<ProjectImage
-								legend='Library'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Search_lpggfw.webp'
-							/>
-							<ProjectImage
-								legend='Tracker'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/PatientTracking_eszpuu.webp'
-							/>
-							<ProjectImage
-								legend='Patient Profile'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/ProfileWeb_r0nefq.webp'
-							/>
-							<ProjectImage
-								legend='Mobile Application'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Mobile_e8xg3z.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='yhp' fade='fadeInLeft'>
+						<ProjectImage
+							legend='Clinician Dashboard'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372940/Dash_ly9crd.webp'
+						/>
+						<ProjectImage
+							legend='Goals'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Goals_cpokxc.webp'
+						/>
+						<ProjectImage
+							legend='Library'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Search_lpggfw.webp'
+						/>
+						<ProjectImage
+							legend='Tracker'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/PatientTracking_eszpuu.webp'
+						/>
+						<ProjectImage
+							legend='Patient Profile'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/ProfileWeb_r0nefq.webp'
+						/>
+						<ProjectImage
+							legend='Mobile Application'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372941/Mobile_e8xg3z.webp'
+						/>
+					</AnimatedCarousel>
 
 					<ScrollAnimation
 						animateIn='fadeInRight'

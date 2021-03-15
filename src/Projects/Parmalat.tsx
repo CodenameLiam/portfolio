@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Popup from 'reactjs-popup';
 import { LanguageIcon } from '../Pages/Skills';
-import { Carousel } from 'react-responsive-carousel';
 import { ReactComponent as Link } from './../Media/Icons/Link.svg';
 import { ProjectImage } from '../Components/ProjectImage';
 import { ProjectLinks } from '../Components/ProjectLinks';
+import { AnimatedCarousel } from '../Components/AnimatedCarousel';
 
 export const Parmalat = () => {
-	const [animateCarousel, setAnimateCarousel] = useState(false);
-
 	return (
 		<div className='parmalat'>
 			<div className='section-container'>
@@ -73,45 +71,32 @@ export const Parmalat = () => {
 							</div>
 						</div>
 					</ScrollAnimation>
-					<ScrollAnimation
-						animateIn='fadeInRight'
-						animateOnce
-						// @ts-ignore
-						afterAnimatedIn={() => setAnimateCarousel(true)}
-						className='project-image-container'>
-						<Carousel
-							key={`parm${animateCarousel.toString()}`}
-							showThumbs={false}
-							autoPlay={animateCarousel}
-							infiniteLoop={true}
-							interval={5000}
-							transitionTime={800}>
-							<ProjectImage
-								legend='Dashboard'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Dash_flz6m7.webp'
-							/>
-							<ProjectImage
-								legend='News Homepage'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/News_vwibm8.webp'
-							/>
-							<ProjectImage
-								legend='News Article'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/NewsStory_doah0x.webp'
-							/>
-							<ProjectImage
-								legend='Login'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Login_fflikb.webp'
-							/>
-							<ProjectImage
-								legend='Documents'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Docs_xrweob.webp'
-							/>
-							<ProjectImage
-								legend='Documents CMS'
-								URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372939/DocsBackend_d67h4t.webp'
-							/>
-						</Carousel>
-					</ScrollAnimation>
+					<AnimatedCarousel identifier='parm' fade='fadeInRight'>
+						<ProjectImage
+							legend='Dashboard'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Dash_flz6m7.webp'
+						/>
+						<ProjectImage
+							legend='News Homepage'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/News_vwibm8.webp'
+						/>
+						<ProjectImage
+							legend='News Article'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/NewsStory_doah0x.webp'
+						/>
+						<ProjectImage
+							legend='Login'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Login_fflikb.webp'
+						/>
+						<ProjectImage
+							legend='Documents'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372938/Docs_xrweob.webp'
+						/>
+						<ProjectImage
+							legend='Documents CMS'
+							URL='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,h_400/v1610372939/DocsBackend_d67h4t.webp'
+						/>
+					</AnimatedCarousel>
 				</div>
 			</div>
 		</div>
