@@ -56,6 +56,10 @@ export const NavigationBar = (props: INavBarProps) => {
 		};
 	}, []);
 
+	useEffect(() => {
+		console.log(navigationMobileOpen);
+	}, [navigationMobileOpen]);
+
 	const getNavigationClassname = () => {
 		return `${!!navigationMobile ? `navigation-item-container-mobile` : ``} ${
 			!!navigationMobileOpen ? `navigation-item-container-mobile-open` : ``
@@ -136,11 +140,10 @@ export const NavigationBar = (props: INavBarProps) => {
 					}}>
 					Contact
 				</div>
-				<div
-					className='hamburger'
-					onClick={() => setNavigationMobileOpen(!navigationMobileOpen)}>
+				<div className='hamburger'>
 					<Hamburger
 						toggled={navigationMobileOpen}
+						toggle={() => setNavigationMobileOpen(!navigationMobileOpen)}
 						rounded={true}
 						color='#fde6e6'
 						size={30}

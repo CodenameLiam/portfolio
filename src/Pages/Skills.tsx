@@ -1,11 +1,11 @@
-import React, { ReactElement } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { ReactComponent as Code } from "./../Media/Skills/Code.svg";
-import { ReactComponent as Design } from "./../Media/Skills/Design.svg";
-import { ReactComponent as Ops } from "./../Media/Skills/Ops.svg";
-import { ReactComponent as Coms } from "./../Media/Skills/Coms.svg";
-import { ReactComponent as Info } from "./../Media/Icons/Info.svg";
-import Popup from "reactjs-popup";
+import React, { ReactElement } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { ReactComponent as Code } from './../Media/Skills/Code.svg';
+import { ReactComponent as Design } from './../Media/Skills/Design.svg';
+import { ReactComponent as Ops } from './../Media/Skills/Ops.svg';
+import { ReactComponent as Coms } from './../Media/Skills/Coms.svg';
+import { ReactComponent as Info } from './../Media/Icons/Info.svg';
+import Popup from 'reactjs-popup';
 
 export const Skills = () => {
 	return (
@@ -25,15 +25,15 @@ export const Skills = () => {
 						Languages
 						<Popup
 							contentStyle={{
-								padding: "1rem",
-								background: "#1c1e26",
-								color: "#ffffff",
-								border: "none",
-								textAlign: "center",
+								padding: '1rem',
+								background: '#1c1e26',
+								color: '#ffffff',
+								border: 'none',
+								textAlign: 'center',
 							}}
 							arrow={false}
 							position='bottom center'
-							on={["hover", "focus"]}
+							on={['hover', 'focus']}
 							trigger={<Info className='tooltip-button' />}>
 							<span className='tooltip'>
 								I have worked with these languages extensively
@@ -45,15 +45,15 @@ export const Skills = () => {
 					<div className='icon-group-container'>
 						<div className='icon-group language-group'>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/JS_otubhb.webp'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_100/v1610372945/JS_otubhb.webp'
 								tooptip='JavaScript'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372947/TS_e5oa7v.webp'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_100/v1610372947/TS_e5oa7v.webp'
 								tooptip='TypeScript'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372945/Python_jitmhh.webp'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_100/v1610372945/Python_jitmhh.webp'
 								tooptip='Python'
 							/>
 							<LanguageIcon
@@ -81,8 +81,12 @@ export const Skills = () => {
 								tooptip='SASS'
 							/>
 							<LanguageIcon
-								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_84/v1610372944/Java_mhw6z4.webp'
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_100/v1610372944/Java_mhw6z4.webp'
 								tooptip='Java'
+							/>
+							<LanguageIcon
+								url='https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_100/v1615811441/FSharp_xmh1ev.webp'
+								tooptip='F#'
 							/>
 							<LanguageIcon
 								url='https://res.cloudinary.com/djeukcxxb/image/upload/v1610374423/Go_kbjj1l.svg'
@@ -97,15 +101,15 @@ export const Skills = () => {
 						Tools
 						<Popup
 							contentStyle={{
-								padding: "1rem",
-								background: "#1c1e26",
-								color: "#ffffff",
-								border: "none",
-								textAlign: "center",
+								padding: '1rem',
+								background: '#1c1e26',
+								color: '#ffffff',
+								border: 'none',
+								textAlign: 'center',
 							}}
 							arrow={false}
 							position='bottom center'
-							on={["hover", "focus"]}
+							on={['hover', 'focus']}
 							trigger={<Info className='tooltip-button' />}>
 							<span className='tooltip'>
 								I use most these tools on a daily basis, and have solid working
@@ -199,15 +203,15 @@ export const LanguageIcon = (props: ILanguageIconProps) => {
 	return (
 		<Popup
 			contentStyle={{
-				background: "#1c1e26",
-				color: "#ffffff",
-				border: "none",
-				textAlign: "center",
-				marginTop: "0.5rem",
+				background: '#1c1e26',
+				color: '#ffffff',
+				border: 'none',
+				textAlign: 'center',
+				marginTop: '0.5rem',
 			}}
 			arrow={false}
 			position='bottom center'
-			on={["hover", "focus"]}
+			on={['hover', 'focus']}
 			trigger={<img className='language-icon' src={props.url} alt={props.tooptip} />}>
 			<span className='tooltip'>{props.tooptip}</span>
 		</Popup>
@@ -236,7 +240,7 @@ const SkillOverview = (props: ISkillOverviewProps) => {
 const SkillsOverviewContent: ISkillOverviewProps[] = [
 	{
 		icon: <Code className='skill-icon' />,
-		title: "Development",
+		title: 'Development',
 		text: `Development is my craft. I love that it allows me to be creative,
 	solve complex problems, and ultimately build something great. I
 	always strive to develop clean, clear, performant, responsive and
@@ -245,7 +249,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 	},
 	{
 		icon: <Design className='skill-icon' />,
-		title: "Design",
+		title: 'Design',
 		text: `Creation is core to the human experience, and I am incredibly
 		passionate about producing work that hits the aesthetic sweet spot, 
 		and hopefully inspires others in their own creative endeavours.`,
@@ -253,7 +257,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 	},
 	{
 		icon: <Ops className='skill-icon' />,
-		title: "Operations",
+		title: 'Operations',
 		text: `There is no point making a product if no one can see how awesome it
 		is! I love architecting scalable, highly performant and fault
 		tolerant solutions, or developing tooling to assist with the
@@ -262,7 +266,7 @@ const SkillsOverviewContent: ISkillOverviewProps[] = [
 	},
 	{
 		icon: <Coms className='skill-icon' />,
-		title: "Teamwork",
+		title: 'Teamwork',
 		text: `Team work makes the dream work! I am super passionate about sharing
 		knowledge, collaborating, learning from or mentoring others and
 		ultimately just working together as a team to make great things.`,
