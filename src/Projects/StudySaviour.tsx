@@ -13,7 +13,7 @@ export const StudySaviour = () => {
             <div className='section-container'>
                 <div className='project-container project-container-left'>
                     <ScrollAnimation
-                        animateIn='fadeInRight'
+                        animateIn='fadeInLeft'
                         animateOnce
                         className='project-text-container'>
                         <div className='section-sub-title project-sub-title-left'>
@@ -75,7 +75,7 @@ export const StudySaviour = () => {
                         </div>
                     </ScrollAnimation>
 
-                    <AnimatedCarousel identifier='study' fade='fadeInLeft'>
+                    <AnimatedCarousel identifier='study' fade='fadeInRight'>
                         <ProjectImage
                             legend='Dashboard'
                             URL='https://res.cloudinary.com/djeukcxxb/image/upload/v1610372939/Dashboard_wfwsen.png'
