@@ -49,10 +49,7 @@ export const WorkingMouse = () => {
                                 arrow={false}
                                 position='bottom center'
                                 trigger={<Link className='project-link-icon' />}>
-                                <ProjectLinks
-                                    git='https://github.com/CodenameLiam/study-saviour'
-                                    pdf={process.env.PUBLIC_URL + '/Media/StudySaviour.pdf'}
-                                />
+                                <ProjectLinks website='https://workingmouse.com.au/' />
                             </Popup>
                         </div>
                         <div className='project-text-left'>
