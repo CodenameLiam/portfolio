@@ -11,12 +11,12 @@ export const StudySaviour = () => {
     return (
         <div className='study-saviour'>
             <div className='section-container'>
-                <div className='project-container project-container-left'>
+                <div className='project-container project-container-right'>
                     <ScrollAnimation
                         animateIn='fadeInLeft'
                         animateOnce
                         className='project-text-container'>
-                        <div className='section-sub-title project-sub-title-left'>
+                        <div className='section-sub-title project-sub-title-right'>
                             Study Saviour
                             <Popup
                                 contentStyle={{
@@ -35,10 +35,10 @@ export const StudySaviour = () => {
                                 />
                             </Popup>
                         </div>
-                        <div className='project-text-left'>
+                        <div className='project-text-right'>
                             <i>Social Note Sharing Platform</i>
                         </div>
-                        <div className='project-text-left'>
+                        <div className='project-text-right'>
                             Study Saviour provides students with a platform to share notes with each
                             other, allowing them to better understand a particular topic that they
                             may have missed in class, share knowledge in order to gain unique
@@ -46,7 +46,7 @@ export const StudySaviour = () => {
                             different members on the platform. The project uses an AWS application
                             load balancer to scale elastically
                         </div>
-                        <div className='project-link-container'>
+                        <div className='project-link-container project-link-container-right'>
                             <div className='project-stack'>
                                 <div className='stack-images'>
                                     <LanguageIcon
