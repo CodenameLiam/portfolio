@@ -1,15 +1,16 @@
-import React from "react";
-import { ReactComponent as BorderPath } from "./../Media/Graphics/Border.svg";
+import React from 'react';
+import { ReactComponent as BorderPath } from './../Media/Graphics/Border.svg';
 
 interface ISectionProps {
-	className?: string;
-	scrollRef?: any;
+    id?: string;
+    className?: string;
+    scrollRef?: any;
 }
 
 export const SectionBreak = (props: ISectionProps) => {
-	return (
-		<div className={`section-break ${props.className}`} ref={props.scrollRef}>
-			<BorderPath className="section-border" />
-		</div>
-	);
+    return (
+        <div id={props.id} className={`section-break ${props.className}`} ref={props.scrollRef}>
+            <BorderPath className='section-border' />
+        </div>
+    );
 };

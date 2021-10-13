@@ -1,75 +1,75 @@
 .awards,
 .cultural {
-	.overview-title {
-		margin-bottom: 0.2rem;
-		font-weight: 500;
-		font-size: 1.2rem;
-	}
+    .overview-title {
+        margin-bottom: 0.2rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
 
-	.overview-sub-title {
-		margin-bottom: 1rem;
-		font-weight: 400;
-		font-style: italic;
-	}
+    .overview-sub-title {
+        margin-bottom: 1rem;
+        font-weight: 400;
+        font-style: italic;
+    }
 
-	.overview-image-container {
-		height: 20rem;
-		display: flex;
-		justify-content: center;
-		margin-bottom: 1rem;
+    .overview-image-container {
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
 
-		@media screen and (max-width: 720px) {
-			height: auto;
-		}
-	}
+        @media screen and (max-width: 720px) {
+            height: auto;
+        }
+    }
 
-	.overview-image {
-		max-width: 20rem;
-		max-height: 20rem;
-		margin: auto;
-	}
+    .overview-image {
+        max-width: 20rem;
+        max-height: 20rem;
+        margin: auto;
+    }
 
-	.awards-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 2rem;
-		row-gap: 1rem;
-		margin-bottom: 6rem;
+    .awards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        margin-bottom: 6rem;
 
-		@media screen and (max-width: 1200px) {
-			grid-template-columns: 1fr 1fr;
-		}
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
-		@media screen and (max-width: 720px) {
-			display: block;
+        @media screen and (max-width: 720px) {
+            display: block;
 
-			.overview-content {
-				margin-bottom: 2rem;
-			}
-		}
-	}
+            .overview-content {
+                margin-bottom: 2rem;
+            }
+        }
+    }
 
-	.cultural-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 2rem;
-		row-gap: 1rem;
-		margin-bottom: 6rem;
+    .cultural-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        margin-bottom: 6rem;
 
-		@media screen and (max-width: 720px) {
-			display: block;
+        @media screen and (max-width: 720px) {
+            display: block;
 
-			.overview-content {
-				margin-bottom: 2rem;
-			}
-		}
+            .overview-content {
+                margin-bottom: 2rem;
+            }
+        }
 
-		.overview-image-container {
-			height: 6rem;
-		}
+        .overview-image-container {
+            height: 6rem;
+        }
 
-		.overview-image {
-			max-height: 100%;
-		}
-	}
+        .overview-image {
+            max-height: 100%;
+        }
+    }
 }
