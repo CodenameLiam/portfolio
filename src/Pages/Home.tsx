@@ -105,9 +105,9 @@ export const Home = () => {
                 <Parmalat />
                 <SectionBreak id='yhp' className='yhp-break' />
                 <YHP />
-                <SectionBreak id='news' className='news-break' />
+                <SectionBreak id='news-reader' className='news-break' />
                 <NewsReader />
-                <SectionBreak id='vector' className='vector-break' />
+                <SectionBreak id='vector-graphics' className='vector-break' />
                 <VectorTool />
 
                 {/* OLD stuff */}
