@@ -39,7 +39,7 @@ export const Award = (props: IAwardProps) => {
 
 const AwardContent: IAwardProps[] = [
     {
-        image: 'https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_500/v1634108352/Hackathon2021_iwkowv.webp',
+        image: 'https://res.cloudinary.com/djeukcxxb/image/upload/c_scale,w_500/v1634108352/Hackathon2021_ha17tt.webp',
         title: 'Peoples Choice Award',
         subTitle: 'UQCS 2021 Hackathon',
         text: `Competed in the University of Queensland Computer 
